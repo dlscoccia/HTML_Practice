@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dlscoccia/HTML-TEST/issues"
   },
-  "homepage": "https://github.com/dlscoccia/HTML-TEST#readme"
+  "homepage": "https://github.com/dlscoccia/HTML-TEST#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
