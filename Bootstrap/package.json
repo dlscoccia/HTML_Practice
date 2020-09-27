@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "hotel",
   "version": "1.0.0",
   "description": "Primer proyecto nodejs",
   "main": "index.html",
@@ -19,5 +19,10 @@
   "homepage": "https://github.com/dlscoccia/HTML-TEST#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
