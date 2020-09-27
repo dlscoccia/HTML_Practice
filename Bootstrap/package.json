@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "Primer proyecto nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlscoccia/HTML-TEST.git"
+  },
+  "author": "Daniel Lorenzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlscoccia/HTML-TEST/issues"
+  },
+  "homepage": "https://github.com/dlscoccia/HTML-TEST#readme"
+}
