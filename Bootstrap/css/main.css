@@ -2,6 +2,11 @@
     background-color: rgb(90, 5, 5);
     color: white;
     margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.menu {
+    justify-content: center;
 }
 
 footer {
@@ -9,8 +14,13 @@ footer {
     background-color: black;
     margin-bottom: 0;
     margin-top: 10px;
+    color: white;
+    text-align: center;
 }
-
+.mensajes {
+    text-align: center;
+    margin-bottom: 30px;
+}
 .card-stone {
     flex: 1 250px;
     padding: 2px 5px 2px 5px;
@@ -19,4 +29,5 @@ footer {
 
 .btn-dark {
     width: 100%;
+    background: rgb(102, 5, 5) 
 }
