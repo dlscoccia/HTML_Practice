@@ -1,14 +1,10 @@
 .jumbotron {
-    background-color: rgb(90, 5, 5);
-    color: white;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    background-color: white;
+    border-radius: 0;
 }
-
 .menu {
     justify-content: center;
 }
-
 
 footer {
     padding: 10px 10px 0 10px;
@@ -21,8 +17,6 @@ footer {
 
 .card-stone {
     flex: 1 250px;
-    padding: 2px 5px 2px 5px;
-    justify-content: space-between;
 }
 
 .btn-dark {
