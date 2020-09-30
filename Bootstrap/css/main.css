@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: white;
+    background-color: rgb(192, 189, 189);
     border-radius: 0;
 }
 .menu {
@@ -14,6 +14,10 @@ footer {
 
 .card-stone {
     flex: 1 250px;
+}
+
+.btn-outline-dark {
+    width: 100%;
 }
 
 .btn-dark {

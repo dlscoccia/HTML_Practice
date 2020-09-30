@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,10 +12,12 @@
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <title> Stones! </title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#"> Stones! </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
@@ -27,7 +30,7 @@
         </div>
     </nav>
     <div class="jumbotron">
-        <img class="img-fluid mt-5" src="images/banner.jpg">
+        <p> Stone Store </p>
     </div>
 
 
@@ -39,16 +42,16 @@
         </nav>
         <div class="row">
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse"
-                data-target="#servicio" aria-expanded="false" aria-controls="multiCollapse1">Servicio</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#servicio"
+                    aria-expanded="false" aria-controls="multiCollapse1">Servicio</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse"
-                data-target="#calidad" aria-expanded="false" aria-controls="multiCollapse2">Calidad</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#calidad"
+                    aria-expanded="false" aria-controls="multiCollapse2">Calidad</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse"
-                data-target="#experiencia" aria-expanded="false" aria-controls="multiCollapse3">Experiencia</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#experiencia"
+                    aria-expanded="false" aria-controls="multiCollapse3">Experiencia</button>
             </div>
         </div>
         <div class="row  mensajes">
@@ -71,98 +74,140 @@
                 </p>
             </div>
         </div>
-        <div class="d-flex flex-wrap">
+        <div class="carousel slide" id="carouselControls" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/banner.jpg" alt="#1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/banner2.jpg" alt="#2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/banner3.jpg" alt="#3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        <div class="d-flex flex-wrap flex-row-reverse">
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
-                <img class="card-img mb-2" src="images/lorem_img.jpeg" alt="img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Este es un titulo de prueba">Lorem ipsum #1</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
+                    <img class="card-img mb-2" src="images/lorem_img.jpeg" alt="img">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
                 </div>
-                <div><button type="button" class="btn btn-dark data-toggle="modal" data-target="#contacto""><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
-                <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Este es un titulo de prueba">Lorem ipsum #2</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
+                    <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
                 </div>
-                <div><button type="button" class="btn btn-dark data-toggle="modal" data-target="#contacto"" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
-            </div>
-            <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
-                <div class="card-body">         
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
-                <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
-                </div>
-                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark data-toggle=" modal"
+                        data-target="#contacto"" data-toggle=" modal" data-target="#contacto"><span
+                            class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
-                <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Este es un titulo de prueba">Lorem ipsum #3</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
+                    <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
                 </div>
-                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
-                <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Este es un titulo de prueba">Lorem ipsum #4</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
+                    <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
                 </div>
-                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span
+                            class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
-                <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Este es un titulo de prueba">Lorem ipsum #5</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
+                    <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
                 </div>
-                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-outline-dark btn-reserva" data-toggle="popover"
+                        title="Hola, Consulta la promociones"> Check</button>
+                </div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
-                <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Este es un titulo de prueba">Lorem ipsum #6</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
+                    <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
                 </div>
-                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-outline-dark btn-reserva" data-toggle="popover"
+                        title="Hola, Consulta la promociones"> Check</button>
+                </div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
-                <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Este es un titulo de prueba">Lorem ipsum #7</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
+                    <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
                 </div>
-                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check</button>
+                <div><button type="button" class="btn btn-outline-dark btn-reserva" data-toggle="popover"
+                        title="Hola, Consulta la promociones"> Check</button>
+                </div>
+            </div>
+            <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
+                <div class="card-body">
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Este es un titulo de prueba">Lorem ipsum #8</h5>
+                    <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
+                    <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
+                <div><button type="button" class="btn btn-outline-dark btn-reserva" data-toggle="popover"
+                        title="Hola, Consulta la promociones"> Check</button>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -192,7 +237,7 @@
         </div>
     </div>
     <footer>
-        <div  class="row align-items-center">
+        <div class="row align-items-center">
             <div class="col-sm-4 d-flex flex-column justify-self-center">
                 <a href="#">Twitter</a>
                 <a href="#">Facebook</a>
@@ -216,5 +261,15 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
+            $('.carousel').carousel({
+                interval: 2000
+            });
+        });
+    </script>
 </body>
+
 </html>
