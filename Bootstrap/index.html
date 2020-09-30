@@ -29,8 +29,8 @@
     <div class="jumbotron">
         <img class="img-fluid mt-5" src="images/banner.jpg">
     </div>
-    </div>
-    
+
+
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -81,7 +81,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
                 </div>
-                <div><button type="button" class="btn btn-dark"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark data-toggle="modal" data-target="#contacto""><span class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
@@ -92,7 +92,18 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
                 </div>
-                <div><button type="button" class="btn btn-dark"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark data-toggle="modal" data-target="#contacto"" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
+            </div>
+            <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
+                <div class="card-body">         
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
+                <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                </div>
+                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
@@ -103,7 +114,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
                 </div>
-                <div><button type="button" class="btn btn-dark"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
@@ -114,7 +125,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
                 </div>
-                <div><button type="button" class="btn btn-dark"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
@@ -125,7 +136,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
                 </div>
-                <div><button type="button" class="btn btn-dark"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
@@ -136,7 +147,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
                 </div>
-                <div><button type="button" class="btn btn-dark"><span class="oi oi-thumb-up"></span> Check </button></div>
+                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check </button></div>
             </div>
             <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
                 <div class="card-body">
@@ -147,22 +158,39 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
                 </div>
-                <div><button type="button" class="btn btn-dark"><span class="oi oi-thumb-up"></span> Check </button></div>
-            </div>
-            <div class="card card-stone d-flex flex-column justify-content-between ml-2 mb-2">
-                <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <h6 class="card-subtitle text-muted mb-2">Lorem</h6>
-                <img class="card-img-top mb-2" src="images/lorem_img.jpeg" alt="img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
+                <div><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contacto"><span class="oi oi-thumb-up"></span> Check</button>
                 </div>
-                <div><button type="button" class="btn btn-dark"><span class="oi oi-thumb-up"></span> Check </button></div>
+            </div>
+        </div>
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contacto Directo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-goup">
+                                <label class="recipient-name" class="col-form-label">Tu email:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-goup">
+                                <label for="message-text" class="col-form-label">Mensaje:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <img src="images/lorem_img.jpeg" alt="img">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <footer>
         <div  class="row align-items-center">
             <div class="col-sm-4 d-flex flex-column justify-self-center">
