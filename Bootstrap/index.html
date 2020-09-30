@@ -37,22 +37,36 @@
                 <li class="breadcrumb-item active" aria-current="page"> Home </li>
             </ol>
         </nav>
-        <div class="row  mensajes">
+        <div class="row">
             <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse"
+                data-target="#servicio" aria-expanded="false" aria-controls="multiCollapse1">Servicio</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse"
+                data-target="#calidad" aria-expanded="false" aria-controls="multiCollapse2">Calidad</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse"
+                data-target="#experiencia" aria-expanded="false" aria-controls="multiCollapse3">Experiencia</button>
+            </div>
+        </div>
+        <div class="row  mensajes">
+            <div class="col-sm-4 collapse multi-collapse" id="servicio">
                 <p>
-                <h3>Lorem ipsum</h3>
+                <h3>Servicio</h3>
                 <p>Lorem ipsum dolor sit amet</p>
                 </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="calidad">
                 <p>
-                <h3>Lorem ipsum</h3>
+                <h3>Calidad</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="experiencia">
                 <p>
-                <h3>Lorem ipsum</h3>
+                <h3>Experiencia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </p>
             </div>

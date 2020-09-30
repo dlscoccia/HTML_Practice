@@ -36,48 +36,118 @@
                 <li class="breadcrumb-item active" aria-current="page"> Precios </li>
             </ol>
         </nav>
-        <div class="table-responsive">
-        <table class="table table-dark table-striped">
-            <thead>
-                <th>Dureza</th>
-                <th>Ubatuba</th>
-                <th>Giallo</th>
-                <th>Emperador Black</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><span class="oi oi-shield"></span></td>
-                    <td>10</td>
-                    <td>20</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td><span class="oi oi-shield"></span>
-                        <span class="oi oi-shield"></span></td>
-                    <td>20</td>
-                    <td>30</td>
-                    <td>40</td>
-                </tr>
-                <tr>
-                    <td><span class="oi oi-shield"></span>
-                        <span class="oi oi-shield"></span>
-                        <span class="oi oi-shield"></span></td>
-                    <td>30</td>
-                    <td>40</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td><span class="oi oi-shield"></span>
-                        <span class="oi oi-shield"></span>
-                        <span class="oi oi-shield"></span>
-                        <span class="oi oi-shield"></span></td>
-                    <td>70</td>
-                    <td>80</td>
-                    <td>90</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul class="nav nav-pills" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="compara-tab" data-toggle="pill" href="#compara" role="tab" aria-controls="compara"
+                aria-selected="true">Compara</a>
+            </li>
+            <li>
+                <a class="nav-link" id="tarjetas-tab" data-toggle="pill" href="#tarjetas" role="tab" aria-controls="tarjetas"
+                aria-selected="false">Tarjetas</a>
+            </li>
+            <li><a class="nav-link" id="comentarios-tab" data-toggle="pill" href="#comentarios" role="tab" aria-controls="comentarios"
+                aria-selected="false">Comentarios</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent" style="padding-top: 10px;">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <th>Dureza</th>
+                            <th>Ubatuba</th>
+                            <th>Giallo</th>
+                            <th>Emperador Black</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="oi oi-shield"></span></td>
+                                <td>10</td>
+                                <td>20</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-shield"></span>
+                                    <span class="oi oi-shield"></span></td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-shield"></span>
+                                    <span class="oi oi-shield"></span>
+                                    <span class="oi oi-shield"></span></td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-shield"></span>
+                                    <span class="oi oi-shield"></span>
+                                    <span class="oi oi-shield"></span>
+                                    <span class="oi oi-shield"></span></td>
+                                <td>70</td>
+                                <td>80</td>
+                                <td>90</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+            </div>
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                                    Tarjeta Basica
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionTarjetas">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h3 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSilver" aria-expanded="true" aria-controls="collapseBasica">
+                                        Tarjeta Silver
+                                    </button>
+                                </h3>
+                            </div>
+                            <div id="collapseSilver" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion" id="accordionTarjetas">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePlatinum" aria-expanded="true" aria-controls="collapseBasica">
+                                            Tarjeta Platinum
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsePlatinum" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
         </div>
+        
+        
     </div>
 
     <footer>
