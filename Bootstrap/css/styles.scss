@@ -1,0 +1,51 @@
+$gris: rgb(192, 189, 189);
+$vinotinto: rgb(85, 1, 1);
+
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+.jumbotron {
+    background-color: $gris;
+    border-radius: 0;
+    font-size: 30px;
+    color: $vinotinto;
+    text-align: center;
+    @include margenes(10px, 20px);
+}
+
+.container {
+    @include margenes(0px, 20px);
+}
+footer {
+    height: 150px;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+}
+
+.card-stone {
+    flex: 1 250px;
+}
+
+.btn-outline-dark {
+    width: 100%;
+}
+
+.btn-dark {
+    width: 100%;
+    background: $vinotinto;
+}
+
+.footer-address-icon {
+    padding-right: 15px;
+}
+
+.textt {
+    text-align: center;
+}
+.mensajes {
+    margin-bottom: 20px;
+    text-align: center;
+}

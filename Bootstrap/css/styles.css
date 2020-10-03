@@ -1,0 +1,40 @@
+.jumbotron {
+  background-color: #c0bdbd;
+  border-radius: 0;
+  font-size: 30px;
+  color: #550101;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.container {
+  margin-top: 0px;
+  margin-bottom: 20px; }
+
+footer {
+  height: 150px;
+  background-color: black;
+  color: white;
+  padding-top: 20px; }
+
+.card-stone {
+  flex: 1 250px; }
+
+.btn-outline-dark {
+  width: 100%; }
+
+.btn-dark {
+  width: 100%;
+  background: #550101; }
+
+.footer-address-icon {
+  padding-right: 15px; }
+
+.textt {
+  text-align: center; }
+
+.mensajes {
+  margin-bottom: 20px;
+  text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
