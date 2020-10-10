@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap_2",
+  "version": "1.0.0",
+  "description": "Directory for boostrap",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlscoccia/HTML-TEST.git"
+  },
+  "author": "Daniel Lorenzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlscoccia/HTML-TEST/issues"
+  },
+  "homepage": "https://github.com/dlscoccia/HTML-TEST#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
