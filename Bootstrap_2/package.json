@@ -1,11 +1,11 @@
 {
   "name": "bootstrap_2",
   "version": "1.0.0",
-  "description": "Directory for boostrap",
+  "description": "\"Testing Bootstrap\"",
   "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
     "lite": "lite-server"
   },
   "repository": {
@@ -18,6 +18,11 @@
     "url": "https://github.com/dlscoccia/HTML-TEST/issues"
   },
   "homepage": "https://github.com/dlscoccia/HTML-TEST#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.16.1"
+  },
   "devDependencies": {
     "lite-server": "^2.5.4"
   }
