@@ -20,6 +20,8 @@
   "homepage": "https://github.com/dlscoccia/HTML-TEST#readme",
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^1.9.1",
     "popper.js": "^1.16.1"
   },
