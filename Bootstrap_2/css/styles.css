@@ -37,3 +37,7 @@ body {
 .navbar-dark {
     background-color: rgba(69, 73, 72, 0.932);
 }
+
+.fa {
+    margin-right: 3px;
+}
