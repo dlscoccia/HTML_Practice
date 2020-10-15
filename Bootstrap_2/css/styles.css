@@ -17,7 +17,7 @@
 }
 
 .jumbotron {
-    padding: 70px 30px 70px 30px;
+    padding: 75px 30px 70px 30px;
     margin: 0px auto;
     background: #8b2f23;
     color: floralwhite;
@@ -40,4 +40,8 @@ body {
 
 .fa {
     margin-right: 3px;
+}
+
+.badge-da {
+    background-color: #8b2f23;
 }
