@@ -70,7 +70,7 @@
         border: 1px solid #dddddd;
         border-radius: 4px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         margin: 0px auto 0px auto;
     }
     
@@ -92,4 +92,45 @@
     
     .container .filters .filters-btn:hover {
         opacity: .9;
+    }
+    
+    .container .filters .locations,
+    .container .filters .amenities,
+    .container .filters .locations-info {
+        height: 100%;
+        width: 43%;
+        padding-left: 30px;
+    }
+    
+    .container .filters .locations-info {
+        padding: 0;
+    }
+    
+    .container .filters .filters-menu .locations {
+        border-right: 1px solid #dddddd;
+    }
+    
+    .container .filters h3 {
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .container .filters h4 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    
+    .container .filters .filters-menu {
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    
+    .container .filters .menu-info {
+        text-decoration: none;
+        list-style: none;
+        border: 1px solid #dddddd;
+        margin: 0;
+        padding: 0;
     }
