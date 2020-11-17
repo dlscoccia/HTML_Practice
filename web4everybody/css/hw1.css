@@ -1,136 +1,121 @@
 body {
     padding: 10px;
-    margin: 0 25px;
+    margin: 10px;
 }
 
 header {
-    background-color: #618ddc;
-    padding: 10px;
-    background-color: green;
-    background-image: url("http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
+    background-image: url("../images/flywheel.jpg");
     background-repeat: no-repeat;
+    /*background-position: 20px 10px;*/
+    padding: 30px 20px 30px 20px;
     background-size: 100%;
+    background-color: #ffffff;
 }
 
 h1 {
     text-align: center;
-    text-transform: uppercase;
+    font-family: "Times New Roman";
     color: #ffffff;
-    font-size: 40px;
+    text-transform: uppercase;
+    padding: 2px;
+    font-size: 25px;
 }
 
-h2 {
-    text-transform: uppercase;
-    color: #1a216f;
+nav {
+    text-align: center;
 }
 
 nav a {
-    color: #FFFFFF;
     display: inline-block;
+    width: 11%;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 1% 30px 0.5% 30px;
+    border-radius: 5px;
+    opacity: 0.5;
     text-decoration: none;
-    font-size: 32px;
-    width: 20%;
-    text-align: center;
-    margin: 0 40px;
-    border-radius: 10px;
-    background-color: #14b62f41;
-    border: #123000 solid 2px;
+    color: #000000;
 }
 
 .active {
-    background-color: #ffffff50;
-    color: #123000
+    opacity: 1;
+    color: #202792;
 }
 
-.active:hover {
-    background-color: #14b62f41;
-}
-
-aside,
-section {
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-aside img {
-    margin-bottom: 20px;
+main {
+    display: flow;
+    margin: auto;
     width: 100%;
-    border-radius: 5px;
-    border: #1a216f solid 3px;
 }
 
 .left {
     width: 20%;
-    background-color: #063606a9;
-    padding: 35px 40px;
+    background-color: #777714;
+    float: left;
+}
+
+.left img {
+    width: 80%;
+    margin: 10%;
+    border: 2px solid black;
 }
 
 .right {
     width: 75%;
-    height: 500px;
-    float: right;
-    background-color: #FFFFFF;
+    float: left;
+    padding: 1%;
 }
 
 table {
-    background-color: #97c27f57;
-    width: 75%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 17px;
-    border-radius: 10px;
+    border-spacing: 0;
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 600px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 7px 7px 0 0;
 }
 
-tr:hover {
-    background-color: rgba(2, 58, 11, 1);
+table tr:first-child {
+    background-color: #055c0d;
+    border-radius: 7px 7px 0 0;
 }
 
-tr:nth-child(even) {
-    background-color: rgba(231, 243, 233, 0.726);
-    transition: font-size 1s;
+table tr th {
+    text-align: center;
+    color: #fcfdfb;
+    border: 0.5px solid #ffffff;
+    border-bottom: 2.5px solid #c3e87b;
+    line-height: 2.4;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 90%;
+    border-radius: 7px 7px 0 0;
 }
 
-tr:nth-child(even):hover {
-    background-color: rgba(2, 58, 11, 0.726);
-    font-size: 20px;
-}
-
-tr:nth-child(odd) {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(28, 68, 1));
-    transition: font-size 1s;
-}
-
-tr:nth-child(odd):hover {
-    background-color: #073601ce;
-    font-size: 20px;
-}
-
-table tr {
-    height: 46px;
+table tr th:first-child {
+    text-align: left;
+    padding-left: 2%;
 }
 
 table tr td {
-    margin: 10px;
+    background-color: #90d48e;
     text-align: center;
+    border: 0.5px solid #ffffff;
+    color: #949593;
+    opacity: 0.7;
+    line-height: 2.4;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    size: 90%;
 }
 
-table,
-th,
-td {
-    border: 1px solid black;
+table tr td:hover {
+    opacity: 1;
+    cursor: default;
+    color: #000000;
+    font-weight: 600;
 }
 
-table th {
-    padding: 20px;
-    background-color: #003605;
-    color: #f5f5f5;
-    border-radius: 10px;
-}
-
-table th:hover {
-    background-color: #f2f2f254;
-}
-
-.text-left {
+table tr td:nth-child(3n+1) {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 2%;
 }
