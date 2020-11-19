@@ -70,10 +70,11 @@ table {
     border-spacing: 0;
     margin-top: 2%;
     margin-left: 10%;
-    width: 600px;
+    width: 720px;
     height: 300px;
     box-sizing: border-box;
     border-radius: 7px 7px 0 0;
+    box-shadow: 3px 4px #767676a6;
 }
 
 table tr:first-child {
@@ -85,16 +86,18 @@ table tr th {
     text-align: center;
     color: #fcfdfb;
     border: 0.5px solid #ffffff;
-    border-bottom: 2.5px solid #c3e87b;
+    border-bottom: 3.5px solid #c3e87b;
     line-height: 2.4;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 90%;
+    font-size: 18px;
     border-radius: 7px 7px 0 0;
+    min-width: 130px;
 }
 
 table tr th:first-child {
     text-align: left;
     padding-left: 2%;
+    width: 00px;
 }
 
 table tr td {
@@ -102,17 +105,19 @@ table tr td {
     text-align: center;
     border: 0.5px solid #ffffff;
     color: #949593;
-    opacity: 0.7;
+    opacity: 0.75;
     line-height: 2.4;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     size: 90%;
+    padding: 5px 5px;
 }
 
-table tr td:hover {
-    opacity: 1;
+table tr:hover {
+    opacity: .95;
     cursor: default;
     color: #000000;
     font-weight: 600;
+    background-color: green;
 }
 
 table tr td:nth-child(3n+1) {
