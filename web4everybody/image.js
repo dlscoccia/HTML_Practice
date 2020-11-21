@@ -1,26 +1,31 @@
-function upDate(previewPic) {
-    /* In this function you should 
-    1) change the url for the background image of the div with the id = "image" 
-    to the source file of the preview image
-    
-    2) Change the text  of the div with the id = "image" 
-    to the alt text of the preview image 
-    */
+/*Add the JavaScript here for the function billingFunction().  It is responsible for setting and clearing the fields in Billing Information */ <
+script >
 
-    document.getElementById('image').innerHTML = previewPic.alt;
-    document.querySelector('#image').style.backgroundImage = "url('" + previewPic.src + "')";
-}
+    function billingFunction() {
 
-function unDo() {
-    /* In this function you should 
-    1) Update the url for the background image of the div with the id = "image" 
-    back to the orginal-image.  You can use the css code to see what that original URL was
+        var name = document.getElementById("shippingName").value;
+        var zipCode = document.getElementById("shippingZip").value;
+        var checkBox = document.getElementById("same");
 
-    2) Change the text  of the div with the id = "image" 
-    back to the original text.  You can use the html code to see what that original text was
-    */
+        if (checkBox.checked == true) {
 
-    document.querySelector('#image').style.backgroundImage = "url('')";
-    document.querySelector('#image').innerHTML = "Hover over an image below to display here.";
+            document.getElementById("billingName").value = name;
+            document.getElementById("billingName").disabled = true;
 
-}
+            document.getElementById("billingZip").value = zipCode;
+            document.getElementById("billingZip").disabled = true;
+
+        } else {
+
+            document.getElementById("billingName").value = "";
+            document.getElementById("billingName").disabled = false;
+
+            document.getElementById("billingZip").value = "";
+            document.getElementById("billingZip").disabled = false;
+
+        }
+
+    }
+
+<
+/script>
