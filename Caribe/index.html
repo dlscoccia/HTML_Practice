@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Caribe Marmol</title>
+    <!-- Agregar meta descripcion 160 chars-->
+    <title>Marmoleria | Caribe Marmol</title>
+    <!-- 50-60 chars -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <script src="https://kit.fontawesome.com/73afd8c670.js" crossorigin="anonymous"></script>
@@ -16,7 +18,9 @@
 <body>
 
     <header>
-        <a href="#"><img href="images/logo.png">CARIBE MARMOL</a>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="logo-image" width="250px" height="100px"></a>
+        </div>
         <nav>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
@@ -25,7 +29,7 @@
     </header>
 
     <section class="hero">
-        <div class="background-image" style="background-image: url(img/hero.jpg);"></div>
+        <div class="background-image" style="background-image: url(img/hero2.jpg);"></div>
         <h1>INNOVACION</h1>
         <h3>La cocina de tus sueños a tu alcance.</h3>
         <a href="#" class="btn">Escribenos</a>
@@ -35,7 +39,7 @@
         <h3 class="title">Somos una compañía dedicada a la importación, transformación y comercialización de mármol, granitos natural y exóticos.</h3>
         <p>En CARIBEMARMOL, tenemos una política de calidad enmarcada en los valores de honestidad, transparencia, liderazgo y desarrollo del recurso humano, solidaridad, compromiso de mejora y seguridad en nuestras operaciones con el fin de lograr los mejores
             resultados posibles. </p>
-        <hr>
+        <hr class="hr-1">
         <ul class="grid">
             <li class="small" style="background-image: url(img/cocina1.jpg);"></li>
             <li class="large" style="background-image: url(img/cocina2.jpg);"></li>
@@ -48,7 +52,7 @@
 
     <section class="features" id="servicios">
         <h3 class="title">Nuestros Servicios</h3>
-        <hr>
+        <hr class="hr-2">
         <ul class="grid">
             <li>
                 <i class="fas fa-truck-pickup"></i>
@@ -79,19 +83,28 @@
     </section>
 
     <section class="contact" id="contact">
-        <h3 class="title">Contactanos</h3>
-        <hr>
+        <h2 class="title">Contactanos</h2>
+        <hr class="hr-3">
         <ul class="grid">
             <li>
-                <h4>Formulario</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+                <div>
+                    <h2>Contacta con nosostros</h2>
+                    <form action="mailto:dlscoccia@gmail.com" class="formulario" method="POST">
+                        <input type="text" placeholder="Nombre" id="nombre" name="nombre" required value="">
+                        <input type="email" placeholder="Correo" id="correo" name="correo" required value="" class="email">
+                        <textarea name="mensaje" id="mensaje" placeholder="Mensaje:"></textarea>
+                        <div class="derecha">
+                            <input class="boton-form" type="submit" value="Contactar" name="submmit">
+                        </div>
+                    </form>
+                </div>
             </li>
             <li>
-                <h4>Direccion</h4>
-                <p>Calle 111 # 37 - 47<br>Barranquilla Colombia.<br>Celular / whatsapp: 322 627 1906 Correo: info@caribemarmol.com</p>
+                <h2>Dirección</h2>
+                <p class="direccion">Calle 111 # 37 - 47<br>Barranquilla Colombia.<br><i class="fas fa-phone"></i> 322 627 1906 <br><i class="fas fa-envelope"></i> info@caribemarmol.com</p>
             </li>
             <li>
-                <h4>Mapa</h4>
+                <h2>Ubicación</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15667.026438608735!2d-74.8371581!3d10.981735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3975d2085cd79f6!2sCaribeMarmol!5e0!3m2!1sen!2sco!4v1607639117199!5m2!1sen!2sco" width="300" height="275"
                     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </li>
@@ -102,7 +115,7 @@
             <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
             <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#">whatsapp</a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
         </ul>
     </footer>
 </body>
