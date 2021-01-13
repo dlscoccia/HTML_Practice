@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Agregar meta descripcion 160 chars-->
-    <title>Marmoleria | Caribe Marmol</title>
-    <!-- 50-60 chars -->
+    <meta name="description" content="Somos especialistas en la fabricacion e instalacion de piezas en granitos importados y 
+    cuarzo para mesones de cocina, baños y escaleras en Barranquilla">
+    <title>Marmoleria | Caribe Marmol Barranquilla</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <script src="https://kit.fontawesome.com/73afd8c670.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_test.css">
+    <!-- <script src="js/index.js"></script> -->
 
 </head>
 
@@ -20,9 +21,9 @@
     <header class="header">
         <a href="#default" class="logo"><img src="img/logo_300x100.svg" width="200" height="85" alt="CaribeMarmol-logo"></a>
         <div class="header-right">
-            <a class="active" href="#nosotros">Nosotros</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contact">Contacto</a>
+            <a class="header-btn-1" href="#nosotros">Nosotros</a>
+            <a class="header-btn-2" href="#servicios">Servicios</a>
+            <a class="header-btn-3" href="#contact">Contacto</a>
         </div>
     </header>
 
@@ -43,11 +44,75 @@
             <li class="large" style="background-image: url(img/cocina2.jpg);"></li>
             <li class="large" style="background-image: url(img/cocina5.jpg);"></li>
             <li class="small" style="background-image: url(img/cocina4.jpg);"></li>
-            <li class="small" style="background-image: url(img/cocina3.jpg);"></li>
-            <li class="large" style="background-image: url(img/cocina6.jpg);"></li>
-            </div>
-    </section>
+            <!--    <li class="small" style="background-image: url(img/cocina3.jpg);"></li>
+            <li class="large" style="background-image: url(img/cocina6.jpg);"></li> -->
+        </ul>
 
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+                <img src="img/cocina1.png" style="width:100%">
+            </div>
+        </div>
+
+
+        <!-- slider -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/cocina4.jpg" style="width:100%" class="carrousel-img">
+                <div class="carrousel-text">Amarillo Pollito <br> Amarillo Pollito</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/cocina5.png" style="width:100%" class="carrousel-img">
+                <div class="carrousel-text">Amarillo Pollito <br> Amarillo Pollito</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/cocina3.jpg" style="width:100%" class="carrousel-img">
+                <div class="carrousel-text">Amarillo Pollito <br> Amarillo Pollito</div>
+            </div>
+            <!--<div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="img/cocina1.png" style="width:100%" class="carrousel-img">
+                <div class="carrousel-text">Amarillo Pollito <br> Amarillo Pollito</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="img/cocina5.png" style="width:100%" class="carrousel-img">
+                <div class="carrousel-text">Amarillo Pollito <br> Amarillo Pollito</div>
+            </div>-->
+            <!--
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+-->
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
     <section class="features" id="servicios">
         <h3 class="title">Nuestros Servicios</h3>
         <hr class="hr-2">
@@ -116,7 +181,32 @@
                 <a href="mailto:info@caribemarmol.com"><i class="fas fa-envelope"></i></a>
             </li> -->
         </ul>
+        <p>&#169;CaribeMarmol</p>
     </footer>
 </body>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script>
 
 </html>
