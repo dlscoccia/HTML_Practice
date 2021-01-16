@@ -15,7 +15,7 @@ html {
 
 header div .logo {
     height: 100px;
-    width: 200px;
+    width: 250px;
 }
 
 ul,
@@ -32,6 +32,7 @@ a {
 
 a:hover {
     opacity: 1;
+    text-decoration: underline;
 }
 
 a.btn {
@@ -100,7 +101,7 @@ ul.grid {
 
 
 /*-------------
- 	Header
+Header
 -------------*/
 
 header {
@@ -116,8 +117,10 @@ header {
     padding: 15px 100px 15px;
 }
 
-header h2 {
-    font-family: 'Quicksand', sans-serif;
+header a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 header nav {
@@ -137,7 +140,7 @@ header nav li:last-child {
 }
 
 .underline--magical {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: linear-gradient(120deg, #09973d 0%, #8cfd75 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.1em;
     background-position: 0 88%;
@@ -201,11 +204,13 @@ header nav li:last-child {
 
 .hero h1 {
     font: bold 60px 'Open Sans', sans-serif;
+    font-family: 'Dancing Script', cursive;
     margin-bottom: 15px;
 }
 
 .hero h3 {
     font: normal 28px 'Open Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 40px;
 }
 
@@ -236,6 +241,12 @@ Our Work Section
 .оur-work {
     background: rgb(245, 230, 5);
     background: linear-gradient(90deg, rgba(245, 230, 5, 0.35) 0%, rgba(40, 245, 2, 0.35057773109243695) 35%, rgba(255, 25, 0, 0.39539565826330536) 100%);
+}
+
+.our-work .title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: none;
 }
 
 .our-work .grid li {
@@ -277,9 +288,9 @@ Our Work Section
 }
 
 .grid-image {
-    -webkit-box-shadow: 6px 4px 18px -6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 6px 4px 18px -6px rgba(0, 0, 0, 0.75);
-    box-shadow: 6px 4px 10px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 8px 20px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 8px 20px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 8px 20px -6px rgba(0, 0, 0, 0.75);
     display: block;
     flex-basis: 100%;
     margin: 10px;
@@ -324,6 +335,11 @@ Features Section
     padding: 0 30px;
     flex-basis: 33%;
     text-align: center;
+}
+
+.features .title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
 }
 
 .features .grid li i {
@@ -373,6 +389,12 @@ Contact Section
 
 .contact .grid h2 {
     margin-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact .grid p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
 }
 
 .contact .grid li {
@@ -412,12 +434,12 @@ footer {
     text-align: center;
     color: #fff;
     background-color: #414a4f;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 footer ul {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-size: 32px;
 }
 
