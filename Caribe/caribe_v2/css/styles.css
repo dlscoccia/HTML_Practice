@@ -39,7 +39,7 @@ a.btn {
     color: rgb(65, 55, 1);
     border-radius: 4px;
     text-transform: uppercase;
-    background-color: #eeda04;
+    background-color: rgb(255, 215, 0);
     font-weight: 800;
     text-align: center;
     border: solid 2px #bda101
@@ -47,6 +47,7 @@ a.btn {
 
 a.btn:hover {
     background-color: #dac8008f;
+    color: white;
 }
 
 hr {
