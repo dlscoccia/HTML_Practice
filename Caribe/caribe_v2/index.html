@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -18,21 +18,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-
+    <!-- Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2866798110315013');
+        fbq('track', 'PageView');
+        fbq('track', 'Contact');
+        fbq('track', 'ViewContent');
+    </script>
+    <noscript>
+    <img height="1" width="1"
+    src="https://www.facebook.com/tr?id=2866798110315013&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Pixel Code -->
 </head>
 
 <body>
 
     <header>
         <div>
-            <img class="logo" src="img/logo_300x100.svg" alt="logo" href="#">
-            <a href="#"></a>
+            <img class="logo" src="img/logo_300x100.svg" alt="logo">
         </div>
         <nav>
-            <li><a href="#Nosotros">Nosotros</a></li>
-            <li><a href="#Catalogo">Catalogo</a></li>
-            <li><a href="#Servicios">Servicios</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
+            <a href="#Nosotros">Nosotros</a>
+            <a href="#Catalogo">Catalogo</a>
+            <a href="#Servicios">Servicios</a>
+            <a href="#Contacto">Contacto</a>
         </nav>
     </header>
 
@@ -41,7 +70,7 @@
         <div class="background-image" style="background-image: url(img/hero2.jpg);"></div>
         <h1>Galería de Mármol</h1>
         <h3>La cocina que <span class="underline--magical">sueñas</span> a tu alcance</h3>
-        <a href="https://api.whatsapp.com/send?phone=573226271906" class="btn">¡Just do it!</a>
+        <a href="https://api.whatsapp.com/send?phone=573226271906" class="btn"><i class="icon icon-btn fab fa-whatsapp fa fa-lg"></i>¡Escribenos!</a>
     </section>
 
 
@@ -59,54 +88,53 @@
         </ul>
         <div class="image-grid" id="Catalogo">
             <div>
-                <img class="grid-image" src="img/1_ICARAI resized.jpg" />
+                <img class="grid-image" src="img/1_ICARAI.jpg" alt="amarillo_icarai" />
                 <p>Amarillo Icarai</p>
             </div>
             <div>
-                <img class="grid-image" src="img/2_ORO_BRASIL resized.jpg" />
+                <img class="grid-image" src="img/2_ORO_BRASIL.jpg" alt="oro_brasil" />
                 <p>Oro Brasil</p>
             </div>
             <div>
-                <img class="grid-image" src="img/3_TOPACIO resized.jpg" />
+                <img class="grid-image" src="img/3_TOPACIO.jpg" alt="amarillo_topacio" />
                 <p>Amarillo Topacio</p>
             </div>
             <div>
-                <img class="grid-image" src="img/4_IPANEMA resized.jpg" />
+                <img class="grid-image" src="img/4_IPANEMA.jpg" alt="beige_ipanema" />
                 <p>Beige Ipanema</p>
             </div>
             <div>
-                <img class="grid-image" src="img/5_BLANCO_VICTORIA resized.jpg" />
+                <img class="grid-image" src="img/5_BLANCO_VICTORIA.jpg" alt="blanco_victoria" />
                 <p>Blanco Victoria</p>
             </div>
             <div>
-                <img class="grid-image" src="img/6_BLANCO_DALAS resized.jpg" />
+                <img class="grid-image" src="img/6_BLANCO_DALAS.jpg" alt="blanco_dallas" />
                 <p>Blanco Dallas</p>
             </div>
             <div>
-                <img class="grid-image" src="img/7_UBATUBA resized.jpg" />
+                <img class="grid-image" src="img/7_UBATUBA.jpg" alt="ubatuba" />
                 <p>Ubatuba</p>
             </div>
             <div>
-                <img class="grid-image" src="img/8-HIMAYALA resized.jpg" />
+                <img class="grid-image" src="img/8-HIMAYALA.jpg" alt="blanco_himalaya" />
                 <p>Blanco Himalaya</p>
             </div>
             <div>
-                <img class="grid-image" src="img/9_NEGRO_BRASIL resized.jpg" />
+                <img class="grid-image" src="img/9_NEGRO_BRASIL.jpg" alt="negro_brasil" />
                 <p>Negro Brasil</p>
             </div>
             <div>
-                <img class="grid-image" src="img/10_ROJO_BRASIL resized.jpg" />
+                <img class="grid-image" src="img/10_ROJO_BRASIL.jpg" alt="rojo_brasil" />
                 <p>Rojo Brasil</p>
             </div>
             <div>
-                <img class="grid-image" src="img/11_VERDE_REAL resized.jpg" />
+                <img class="grid-image" src="img/11_VERDE_REAL.jpg" alt="verde_real" />
                 <p>Verde Real</p>
             </div>
             <div>
-                <img class="grid-image" src="img/12_BLANCO_MIRAGE resized.jpg" />
+                <img class="grid-image" src="img/12_BLANCO_MIRAGE.jpg" alt="blanco_mirage" />
                 <p>Blanco Mirage</p>
             </div>
-        </div>
         </div>
     </section>
 
@@ -132,7 +160,6 @@
                 <p>Acabados con total lujo y elegancía, como lo mereces. Satisfacción 100% garantizada.</p>
             </li>
         </ul>
-        </div>
     </section>
     <section class="contact" id="Contacto">
         <ul class="grid">
@@ -142,8 +169,8 @@
             </li>
             <li>
                 <h2>Ubicación</h2>
-                <iframe class="maps " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15667.026438608735!2d-74.8371581!3d10.981735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3975d2085cd79f6!2sCaribeMarmol!5e0!3m2!1sen!2sco!4v1607639117199!5m2!1sen!2sco" frameborder="0"
-                    style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe class="maps " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15667.026438608735!2d-74.8371581!3d10.981735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3975d2085cd79f6!2sCaribeMarmol!5e0!3m2!1sen!2sco!4v1607639117199!5m2!1sen!2sco" style="border:0;"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </li>
         </ul>
     </section>
