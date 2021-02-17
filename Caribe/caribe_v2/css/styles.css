@@ -29,11 +29,12 @@ a {
     cursor: pointer;
     opacity: 0.9;
     margin: 10px;
+    text-decoration: underline;
 }
 
 a:hover {
-    opacity: 1;
-    text-decoration: underline;
+    opacity: 0.8;
+    color: rgb(16, 57, 77);
 }
 
 a.btn {
@@ -156,7 +157,7 @@ header nav li:last-child {
 
 @media (max-width: 1000px) {
     header {
-        padding: 20px 50px;
+        padding: 20px 20px;
     }
 }
 
@@ -166,6 +167,10 @@ header nav li:last-child {
     }
     header h2 {
         margin-bottom: 15px;
+    }
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -230,6 +235,7 @@ Hero Section
     }
     .hero h1 {
         font-size: 48px;
+        margin-top: 180px;
     }
     .hero h3 {
         font-size: 24px;
@@ -293,11 +299,12 @@ Our Work Section
 .image-grid {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 30px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
+    justify-content: center;
 }
 
 .grid-image {
@@ -398,6 +405,12 @@ Contact Section
 
 .contact {
     background-color: #f7f7f7;
+    padding: 25px 40px;
+}
+
+.contact .grid {
+    display: flex;
+    align-items: center;
 }
 
 .contact .grid h2 {
@@ -408,6 +421,7 @@ Contact Section
 .contact .grid p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
+    min-height: 300px;
 }
 
 .contact .grid li {
@@ -417,6 +431,7 @@ Contact Section
 
 .contact .maps {
     width: 100%;
+    min-height: 300px;
 }
 
 @media (max-width: 1000px) {
