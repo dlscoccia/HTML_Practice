@@ -16,49 +16,42 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/styles.css">
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 <body>
-	<div class="w-full h-screen" style="background-image: url(./img/hero_crema.jpeg);">
-		<nav class="flex items-center justify-between flex-wrap p-1 w-full">
-			<div class="flex items-center flex-shrink-0 text-white mr-6 mt-4 sm:mt-2">
-				<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-					<span class="w-52 flex ml-6"><img src="./img/logo_300x100.svg" alt="hero" class="object-cover"></span>
-				</a>
-			</div>
-	
-			<div class="block lg:hidden mr-4">
-				<button id="nav-toggle" class="flex px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
-					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-				</button>
-			</div>
-	
-			<div class="w-full flex-grow lg:flex justify-center lg:items-center lg:w-auto hidden lg:block md:pt-2 lg:pt-0 " id="nav-content">
-				<ul class="list-reset lg:flex flex-1 items-center md:justify-center">
-					<li class="text-right md:text-center mr-3 ">
-						<a class="text-gray-800 px-4 text-xl md:text-2xl border-b-2 border-transparent hover:border-yellow-400 transition duration-700 ease-in" href="#nosotros">Nosotros</a>
-					</li>
-					<li class="text-right md:text-center mr-3">
-						<a class="text-gray-800 px-4 text-xl md:text-2xl border-b-2 border-transparent hover:border-yellow-400 transition duration-700 ease-in" href="#catalogo">Catalogo</a>
-					</li>
-					<li class="text-right md:text-center mr-3">
-						<a class="text-gray-800 px-4 text-xl md:text-2xl border-b-2 border-transparent hover:border-yellow-400 transition duration-700 ease-in" href="#servicios">Servicios</a>
-					</li>
-					<li class="text-right md:text-center mr-3">
-						<a class="text-gray-800 px-4 text-xl md:text-2xl border-b-2 border-transparent hover:border-yellow-400 transition duration-700 ease-in" href="#contacto">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div class=" h-4/5 flex flex-col justify-start sm:justify-center items-center mt-6 md:mt-12">
-			<p class="text-4xl sm:text-5xl md:text-7xl blue text-center" style="font-family: 'Cardo', serif;">Galeria de Marmol</p>
+		<div class="w-full h-screen" style="background-image: url(./img/hero_crema.jpeg);">
+			<div>
+				<div class="w-full text-gray-700 bg-white">
+				  <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+					<div class="flex flex-row items-center justify-between p-4">
+					  <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img src="./img/logo_300x100.svg" alt="logo" class="w-48"></a>
+					  <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+						<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+						  <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+						  <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+						</svg>
+					  </button>
+					</div>
+					<nav :class="{'flex': open, 'hidden': !open}" class="flex-grow hidden pb-4 md:pb-0 md:flex justify-center md:flex-row">
+					  <a class="px-1 md:px-4 py-2 mt-2 text-xs sm:text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-400 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#nosotros">NOSOTROS</a>
+					  <a class="px-1 md:px-4 py-2 mt-2 text-xs sm:text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-400 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#catalogo">CATALOGO</a>
+					  <a class="px-1 md:px-4 py-2 mt-2 text-xs sm:text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-400 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#servicios">SERVICIOS</a>
+					  <a class="px-1 md:px-4 py-2 mt-2 text-xs sm:text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-400 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#contacto">CONTACTO</a>
+					</nav>
+				  </div>
+				</div>
+				</div>
+		<div class="h-full flex flex-col justify-center items-center">
+			<p class="text-3xl sm:text-5xl md:text-7xl blue text-center" style="font-family: 'Cardo', serif;">Galeria de Mármol</p>
 			<p class="text-xl sm:text-4xl p-5 text-center font-medium">Materiales que revalorizan tus ambientes</p>
-		<a href="#" class="flex items-center bg-yellow-300 hover:bg-yellow-400 rounded p-2 md:text-2xl">Escribenos<img src="https://img.icons8.com/doodle/48/000000/whatsapp.png" class="ml-2 inline w-8 h-8"/></a>
+		<a href="https://api.whatsapp.com/send?phone=573226271906" class="flex items-center border-b-2 border-yellow-400 hover:bg-yellow-400 p-2 md:text-2xl transition duration-500 ease-in">Escribenos<img src="https://img.icons8.com/doodle/48/000000/whatsapp.png" class="ml-2 inline w-8 h-8"/></a>
 		</div>
 	</div>
-    <section class="flex h-1/2 flex-col items-center justify-center p-12">
+</div>
+    <section class="flex h-1/2 flex-col items-center justify-center p-12" id="nosotros">
         <h3 class="text-2xl md:text-4xl text-center m-8" style="font-family: 'Cardo', serif;">Somos una empresa dedicada a la transformación y comercialización de mármol, granitos naturales y exóticos.</h3>
         <div class="flex flex-col md:flex-row justify-evenly items-center p-4">
-		<p class="text-center text-xl w-full md:w-1/2 text-gray-700 p-2 md:p-8"><span class="font-bold">Belleza, lujo, fuerza y versatilidad.</span> Nuestra misión es ofrecer una amplia oferta y soluciones variadas en recubrimientos, a través de técnicas y tecnologías que resultan en productos innovadores y diferenciados, siempre cuidando de manera meticulosa los acabados finales en todos nuestros trabajos.</p>
+		<p class="text-center text-xl w-full md:w-1/2 text-gray-700 p-2 md:p-8"><span class="font-bold">La belleza, lujo, fuerza y versatilidad de lo natural.</span> Nuestra misión es ofrecer una amplia oferta y soluciones variadas en recubrimientos, a través de técnicas y tecnologías que resultan en productos innovadores, con altos estandares de calidad siempre cuidando de manera meticulosa los acabados finales en todos nuestros trabajos.</p>
 		<div class="flex justify-center"><img src="./img/caribe.png" alt="frente" class="w-full md:w-4/5 rounded shadow-2xl"></div>
 		</div>
 		<div class="flex justify-center pt-6">
@@ -71,10 +64,10 @@
 		</div>
 		</section>
 		<div>
-			<img src="./img/landscape.jpeg" alt="landscape">
+			<img src="./img/landscape.jpeg" alt="landscape" class="mx-auto">
 		</div>
 	<section class="p-8 flex flex-col items-center justify-between">
-		<h1 class="p-6 text-5xl text-center">Catalogo</h1>
+		<h1 class="p-6 text-5xl text-center" style="font-family: 'Cardo', serif;">CATALOGO</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-6" id="catalogo">
             <div>
                 <img class="hover:opacity-80 shadow-xl" src="img/1_ICARAI.jpg" alt="amarillo_icarai" />
@@ -126,6 +119,77 @@
             </div>
         </div>
 	</section>
+	<section class="bg-gray-700 p-8" id="servicios">
+		<h2 class="text-center text-5xl m-3 text-white style="font-family: 'Cardo', serif;">SERVICIOS</h2>
+		<div class="w-full text-white min-h-screen flex flex-wrap justify-evenly items-center gap-3 py-5">
+			<div class="backdrop w-10/12 md:w-1/4 bg-white bg-opacity-10 rounded p-3 border border-gray-300 shadow-lg">
+			  <!-- header -->
+			  <div class="w-full mb-3 pb-3 border-b border-1 border-white">
+				<h3 class="text-xl font-semibold text-shadow text-center">Fabricación e instalación</h3>
+			  </div>
+			  <!-- body -->
+			  <div>
+				<img src="./img/slabs.jpg" alt="image1" class="w-full h-48 object-cover mb-2">
+				<p class="mb-3 tracking-wide text-base text-shadow text-center">
+					Realizamos tu obra en todas sus fases, incluyendo la toma de medida en el sitio, corte y transformación de la piedra de tu preferencia, transporte e instalación; tambien contamos con lavaplatos de la exclusiva marca Tramontina para la venta. Todo lo que necesitas en un solo lugar.
+				</p>
+			  </div>
+			</div>
+			<div class="backdrop w-10/12 md:w-1/4 bg-white bg-opacity-10 rounded p-3 text-white border border-white shadow-lg">
+			  <!-- header -->
+			  <div class="w-full mb-3 pb-3 border-b border-1 border-white">
+				<h3 class="text-xl font-semibold text-shadow text-center">Especialistas en el sector hogar</h3>
+			  </div>
+			  <!-- body -->
+			  <div>
+				<img src="./img/hogar.jpg" alt="image2" class="w-full h-48 object-cover mb-2">
+				<p class="mb-3 tracking-wide text-base text-shadow text-center">
+					Sabemos que los espacios de cada hogar reflejan nuestra identidad por lo nuestro enfoque para los proyectos del sector residencial prioriza la personalización de cada cliente, tomando como criterios principales el diseño, innovación y la transformación de los espacios acordes con las necesidades de las personas.
+				</p>
+			  </div>
+			</div>
+			<div class="backdrop w-10/12 md:w-1/4 bg-white bg-opacity-10 rounded p-3 text-white border border-white shadow-lg">
+			  <!-- header -->
+			  <div class="w-full mb-3 pb-3 border-b border-1 border-white">
+				<h3 class="text-xl font-semibold text-shadow text-center">Asesoría personalizada</h3>
+			  </div>
+			  <!-- body -->
+			  <div>
+				<img src="./img/asesoria.jpg" alt="image3" class="w-full h-48 object-cover mb-2">
+				<p class="mb-3 tracking-wide text-base text-shadow text-center">
+					Contara con asesoría especializada para definir cuáles son los mejores materiales para su proyecto junto con acompañamiento en cada una de las etapas del proyecto, nuestro personal calificado le ofrece un servicio de calidad buscando siempre la satisfacción plena de nuestros clientes.
+				</p>
+			  </div>
+			</div>
+		  </div>
+	</section>
+	<section>
+		<div class="flex flex-col md:flex-row items-center md:items-stretch justify-evenly p-12" id="contacto">
+            <div class="w-1/2 flex flex-col items-center justify-evenly">
+                <h2 class="text-4xl m-6 md:m-0">Dirección</h2>
+				<div>
+                <p class="text-center my-auto text-2xl p-2">Calle 111 # 37 - 47</p>
+				<p class="text-center my-auto text-xl  p-2">Cerca al puente del la Circunvalar con Carrera 38</p>
+				<p class="text-center my-auto text-2xl p-2">Barranquilla Colombia.</p>
+				<p class="text-center my-auto text-2xl p-2"><i class="fas fa-phone"></i> 322 627 1906</p>
+				<p class="text-center my-auto text-2xl p-2"><i class="fas fa-envelope"></i> info@caribemarmol.com</p>
+			</div>
+			</div>
+            <div class="w-full md:w-1/2">
+                <iframe class="h-96 w-full p-8" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15667.026438608735!2d-74.8371581!3d10.981735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3975d2085cd79f6!2sCaribeMarmol!5e0!3m2!1sen!2sco!4v1607639117199!5m2!1sen!2sco"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
+	</section>
+	<footer class="bg-gray-800 flex flex-col items-center justify-center">
+			<ul class="w-full flex justify-evenly p-3">
+				<li><a href="https://api.whatsapp.com/send?phone=573226271906"><img src="https://img.icons8.com/plasticine/42/000000/whatsapp.png"/></a></li>
+				<li><a href="https://twitter.com/caribemarmolcol" target="_blank"><img src="https://img.icons8.com/officel/36/000000/twitter.png"/></a></li>
+				<li><a href="https://www.facebook.com/caribemarmolcol" target="_blank"><img src="https://img.icons8.com/office/36/000000/facebook-new.png"/></a></li>
+				<li><a href="https://www.instagram.com/caribemarmolcol/" target="_blank"><img src="https://img.icons8.com/office/36/000000/instagram-new.png"/></a></li>
+			</ul>
+			<p class="text-center text-gray-400 pt-2 border-t-2 border-gray-600 w-full md:w-1/2">Copyright reservados CaribeMarmol - Diseñado por @dlscoccia <a href="https://twitter.com/dlscoccia"><img src="https://img.icons8.com/fluent/24/000000/twitter.png" class="inline"/></a></p>
+		</footer>
 	<script>
 		//Javascript to toggle the menu
 		document.getElementById('nav-toggle').onclick = function(){

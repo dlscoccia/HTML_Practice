@@ -8,66 +8,41 @@
     <meta name="description" content="Somos especialistas en la fabricacion e instalacion de piezas en granitos importados y 
     cuarzo para mesones de cocina, baños y escaleras en Barranquilla">
     <title>Marmoleria | Caribe Marmol Barranquilla</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/73afd8c670.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2866798110315013');
-        fbq('track', 'PageView');
-        fbq('track', 'Contact');
-        fbq('track', 'ViewContent');
-    </script>
-    <noscript>
-    <img height="1" width="1"
-    src="https://www.facebook.com/tr?id=2866798110315013&ev=PageView
-    &noscript=1"/>
-    </noscript>
-    <!-- End Pixel Code -->
 </head>
-
 <body>
-
     <header>
-        <div>
-            <img class="logo" src="img/logo_300x100.svg" alt="logo">
-        </div>
-        <nav>
-            <a href="#Nosotros">Nosotros</a>
-            <a href="#Catalogo">Catalogo</a>
-            <a href="#Servicios">Servicios</a>
-            <a href="#Contacto">Contacto</a>
+        <nav class="flex items-center justify-between flex-wrap bg-white p-1 fixed w-full z-10 top-0">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <a class="text-gray-800 no-underline hover:text-white hover:no-underline" href="#">
+                    <img src="./img/logo_300x100.svg" alt="logo" class="w-48 h-24">
+                </a>
+            </div>
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <li class="mr-3">
+                        <a class="inline-block md:text-2xl text-blue-900 hover:text-blue-500 py-2 px-4 hover:underline" href="#">Nosotros</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block md:text-2xl text-blue-900 no-underline hover:text-blue-500 hover:underline py-2 px-4" href="#">Catalogo</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block md:text-2xl text-blue-900 no-underline hover:text-blue-500 hover:underline py-2 px-4" href="#">Servicios</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block md:text-2xl  text-blue-900 no-underline hover:text-blue-500 hover:underline py-2 px-4" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-
-
     <section class="hero">
-        <div class="background-image" style="background-image: url(img/hero2.jpg);"></div>
+        <div class="background-image" style="background-image: url(img/hero_crema.jpg);"></div>
         <h1>Galería de Mármol</h1>
         <h3>PURO LUJO - <span class="underline--magical">ELEGANTE</span> COMO TU!</h3>
         <a href="https://api.whatsapp.com/send?phone=573226271906" class="btn"><i class="icon icon-btn fab fa-whatsapp fa fa-lg"></i>¡Just do it!</a>
@@ -174,14 +149,7 @@
             </li>
         </ul>
     </section>
-    <footer>
-        <ul>
-            <li><a href="https://api.whatsapp.com/send?phone=573226271906"><i class="icon fab fa-whatsapp fa"></i></a></li>
-            <li><a href="https://twitter.com/caribemarmolcol" target="_blank"><i class="icon fa fa-twitter-square fa"></i></a></li>
-            <li><a href="https://www.facebook.com/caribemarmolcol" target="_blank"><i class="icon fa fa-facebook-square fa"></i></a></li>
-            <li><a href="https://www.instagram.com/caribemarmolcol/" target="_blank"><i class="icon fab fa-instagram fa"></i></a></li>
-        </ul>
-    </footer>
+
 
 </body>
 
