@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(3, 63, 63);
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.container {
+    width: 30%;
+    margin: auto;
+    border: 2px rgb(151, 148, 148) solid;
+}
+
+.result {
+    background-color: #111;
+    width: 100%;
+    text-align: end;
+    font-size: 40px;
+    font-family: monospace;
+    color:aliceblue;
+    padding: 10px;
+}
+
+button {
+    border: 0;
+    padding: 25px 20px;
+    font-size: 36px;
+}
+button:hover {
+    opacity: 80%;
+}
+
+.operations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gray {
+    background-color: rgb(51, 49, 49);
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gray .row {
+    width: 100%;
+    display: flex;
+}
+
+.gray button {
+    background-color: rgb(201, 198, 198);
+    border: 0.5px solid black;
+}
+
+.gray .row .number {
+    width: 33.3%;
+}
+
+.gray .row .one-third {
+    width: 33.3%;
+}
+
+.gray .row .two-third {
+    width: 66.6%;
+}
+
+.gray .full {
+width: 100%;
+}
+
+.orange {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.orange button {
+    background-color: rgb(216, 133, 50);
+    border: 0.5px solid black;
+}
