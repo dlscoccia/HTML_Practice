@@ -71,7 +71,10 @@ let actualClick = document.querySelector('.operations').addEventListener('click'
     } else {
       resultDisplay.innerText = divition(x, y)
     }
-    }
+  operator = '';
+  x = '';
+  y = '';  
+  }
 
   });
 
