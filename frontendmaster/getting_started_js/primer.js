@@ -20,8 +20,10 @@ class Bookshelf {
 }
 
 
-function loadBooks( /* .. */ ) {
+function loadBooks(Bookshelf) {
 	// TODO: call fakeAjax( .. );
+    fakeAjax(BOOK_API, this.Bookshelf)
+
 }
 
 var BOOK_API = "https://some.url/api";
