@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dlscoccia | Portafolio</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="hero h-screen">
+        <header class="header">
+            <nav class="nav">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <img src="./assets/images/logo_light.png" alt="logo" class="logo-image">
+                        <h1 class="nav-name">dlscoccia</h1>
+                    </div>
+                    <label for="menu" class="nav-label">
+                        <span class="menu-icon"><i class="fas fa-bars"></i></span>
+                    </label>
+                    <input type="checkbox" id="menu" class="nav-input">
+                    <div class="nav-menu">
+                        <a href="#" class="nav-item">About me</a>
+                        <a href="#" class="nav-item">projects</a>
+                        <a href="#" class="nav-item">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="hero-info z-10 h-full absolute flex justify-around items-center w-full">
+            <div class="hero-info-text text-6xl">
+                <h2 class="hero-text">Desarrollador Web</h2>
+                <hr class="hero-text-hr my-3 text-red-500">
+                <h2 class="hero-text">Freelancer</h2>
+            </div>
+            <div class="hero-info-image w-1/5">
+                <img src="./assets/images/photo_me.png" alt="Me">
+            </div>
+        </div>
+        <div class="waveWrapper waveAnimation z-0">
+            <div class="waveWrapperInner bgTop">
+                <div class="wave waveTop" style="background-image: url('./assets/images/wave-top.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle"
+                    style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom"
+                    style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+            </div>
+        </div>
+    </section>
+    <section class="about bg-blue-800">
+        <h1>HOLAAAAAA</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam asperiores explicabo illo aperiam magnam
+            dolore nostrum ipsam. Corrupti, deleniti rem.</p>
+    </section>
+    <section class="contact bg-blue-300">
+        <div class="form-container">
+            <h1>Please Login</h1>
+            <form action="https://formsubmit.co/dlscoccia@gmail.com" method="POST">
+                <div class="form-control">
+                    <input type="text" required>
+                    <label>Tu Nombre</label>
+                </div>
+                <div class="form-control">
+                    <input type="password" required>
+                    <label>Tu Email</label>
+                </div>
+                <div class="form-control">
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <label>Tu mensaje</label>
+                </div>
+                <h1>Holaaaa</h1>
+                <button type="submit" class="form-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
