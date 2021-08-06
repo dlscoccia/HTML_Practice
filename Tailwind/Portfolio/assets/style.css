@@ -76,11 +76,23 @@ body {
 
 .hero .header {
     width: 100%;
-    font-family: var(--secundary);
     padding: 1rem 2rem;
     background-color: var(--blue);
     margin-bottom: 1rem;
     border-bottom: #d4af37 solid 1px;
+}
+
+.header.active {
+    background-color: var(--white);
+    padding: 0.5rem 2rem;
+}
+
+.header.active .nav .nav-menu {
+    color: var(--blue);
+}
+
+.header.active .nav-logo {
+    display: none;
 }
 
 .nav {
@@ -96,6 +108,16 @@ body {
     align-items: center;
     margin: 0 auto;
 
+}
+
+.nav-logo-active {
+    width: 45px;
+    margin-right: 1rem;
+    display: none;
+}
+
+.header.active .nav-logo-active {
+    display: block;
 }
 
 .nav-logo {
@@ -115,13 +137,17 @@ body {
     align-items: center;
     gap: 1.5em;
     font-weight: 900;
-
 }
 
 .nav-item {
     text-decoration: none;
     text-transform: uppercase;
     --underline: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav-item.current {
+    font-weight: 900;
+    color: var(--gold);
 }
 
 .nav-item::after {

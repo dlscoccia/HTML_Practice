@@ -14,10 +14,13 @@
 </head>
 
 <body>
-    <section class="hero h-screen bg-dark">
-        <header class="header">
+    <section class="hero h-screen bg-dark" id="hero">
+        <header class="header active">
             <nav class="nav primary text-lg tracking-wider">
                 <div class="nav-container">
+                    <div class="nav-logo-active">
+                        <img src="./assets/images/logo.png" alt="Logo black">
+                    </div>
                     <div class="nav-logo">
                         <img src="./assets/images/logo_light.png" alt="logo" class="logo-image">
                         <h2 class="nav-name hidden md:inline text-white">dlscoccia</h2>
@@ -136,8 +139,8 @@
         <h2
             class="heading-light w-max text-4xl border-b-2 border-yellow-400 mx-auto text-center mb-8">
             PROYECTOS</h2>
-        <div class="projects-container">
-            <div class="panel flex">
+        <div class="projects-container flex flex-col sm:flex-row">
+            <div class="panel flex h-full">
                 <div class="img w-4/5 bg-gray-900 px-1">
                     <img src="./assets/images/1_project_tributo.png" alt="Web Tributo"
                         class="border-2 border-yellow-400">
@@ -158,7 +161,7 @@
                                 class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
                         </div>
                     </div>
-                    <div class="secundary text-xl flex justify-evenly text-blue font-bold mt-10 underline">
+                    <div class="secundary text-xl flex flex-col sm:flex-row justify-evenly text-blue font-bold mt-10 underline">
                         <a href="#" class="hover:text-yellow-400">Figma</a>
                         <a href="https://github.com/dlscoccia/HTML_Practice/tree/master/1_web_tributo"
                             class="hover:text-yellow-400" target="_blank">Codigo</a>
@@ -200,7 +203,7 @@
                         class="border-2 border-yellow-400">
                 </div>
                 <div class="panel-info bg-white py-4 px-2 text-center border-2 border-yellow-400">
-                    <h3 class="primary text-gold text-center text-3xl font-bold">Memoria - El Juego</h3>
+                    <h3 class="primary text-gold text-center text-3xl font-bold">Memoria - El&nbsp;Juego</h3>
                     <p class="secundary text-center text-blue font-bold py-4 text-xl border-b-2 border-gray-300 hidden sm:block">
                         Juego de memoría en versión
                         web, utilizando eventos de Javascript.</p>
@@ -220,7 +223,7 @@
                 </div>
             </div>
         </div>
-        <div class="projects-container">
+        <div class="projects-container flex flex-col  sm:flex-row">
             <div class="panel flex">
                 <div class="img w-4/5 bg-gray-900 px-1">
                     <img src="./assets/images/3_project_jessfood.png" alt="Web Tributo"
@@ -302,7 +305,7 @@
         </div>
     </section>
     <!-- ARTICLES SECTION -->
-    <section class="bg-light h-screen bg-gray-700 p-10">
+    <section class="bg-light h-screen bg-gray-700 p-10" id="articles">
         <h2
             class="heading-dark w-max text-4xl border-b-2 border-gray-900 mx-auto text-blue text-center mb-8">
             ULTIMOS ARTICULOS</h2>
@@ -310,7 +313,7 @@
             <div class="page absolute duration-1000 flex items-end origin-left w-1/2 transition transform h-full"
                 data-page="2" onclick="togglePageFlip(this)">
                 <div
-                    class="front text-xl sm:text-3xl md:text-5xl flex items-center justify-center px-2 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full border-l-2 border-yellow-400">
+                    class="front text-sm sm:text-3xl md:text-5xl flex items-center justify-center px-2 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full border-l-2 border-yellow-400">
                     <a href="https://dlscoccia.medium.com/the-internet-of-what-iot-the-new-revolution-f10d493468ab"
                         target="_blank" class="text-white ml-4 hover:text-yellow-400">The
                         internet of What? IoT… The new revolution.</a>
@@ -318,7 +321,7 @@
                             class="fas fa-angle-double-right"></i></p>
                 </div>
                 <div
-                    class="back text-xl sm:text-3xl md:text-5xl flex items-center justify-center px-4 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full border-r-2 border-yellow-400">
+                    class="back text-md sm:text-3xl md:text-5xl flex items-center justify-center px-4 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full border-r-2 border-yellow-400">
                     <p class="text-2xl text-gold animate-pulse self-end ml-4 mb-4 cursor-pointer"><i
                             class="fas fa-angle-double-left"></i></p>
                     <a href="https://dlscoccia.medium.com/mutable-immutable-everything-is-an-object-6c9218c062c6" target="_blank" class="text-white mr-4 hover:text-yellow-400">Mutable,
@@ -328,13 +331,13 @@
             <div class="page absolute duration-1000 flex items-end origin-left w-1/2 transition transform h-full"
                 data-page="1" onclick="togglePageFlip(this)">
                 <div
-                    class="front text-xl sm:text-3xl md:text-5xl flex flex-col items-center justify-around px-4 font-bold bg-gray-900 absolute right-0 w-full h-full border-l-2 border-yellow-400">
+                    class="front text-sm sm:text-3xl md:text-5xl flex flex-col items-center justify-around px-4 font-bold bg-gray-900 absolute right-0 w-full h-full border-l-2 border-yellow-400">
                     <p class="text-white mt-8 p-4 sm:p-6 md:p-8 text-lg sm:text-xl md:text-4xl">"La tecnología es mejor cuando reúne a la gente."</p>
                     <p class="text-white text-sm italic self-end p-8">-Matt Mullenweg.</p>
                     <p class="text-2xl text-gold animate-pulse self-end mb-4 mr-8 cursor-pointer"><i
                             class="fas fa-angle-double-right"></i></p>
                 </div>
-                <div class="back text-xl sm:text-3xl md:text-5xl flex items-center justify-center px-2 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full"">
+                <div class="back text-sm sm:text-3xl md:text-5xl flex items-center justify-center px-2 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full"">
                     <p class=" text-2xl text-gold animate-pulse self-end ml-4 mb-4 cursor-pointer"><i
                         class="fas fa-angle-double-left"></i></p>
                     <a href="https://dlscoccia.medium.com/what-happens-when-you-type-something-in-your-browser-and-press-enter-538d3d3c41c5"
