@@ -14,344 +14,393 @@
 </head>
 
 <body>
-    <section class="hero h-screen">
+    <section class="hero h-screen bg-dark">
         <header class="header">
-            <nav class="nav">
+            <nav class="nav primary text-lg tracking-wider">
                 <div class="nav-container">
                     <div class="nav-logo">
                         <img src="./assets/images/logo_light.png" alt="logo" class="logo-image">
-                        <h2 class="nav-name hidden md:inline">dlscoccia</h2>
+                        <h2 class="nav-name hidden md:inline text-white">dlscoccia</h2>
                     </div>
                     <label for="menu" class="nav-label">
                         <span class="menu-icon"><i class="fas fa-bars"></i></span>
                     </label>
                     <input type="checkbox" id="menu" class="nav-input">
-                    <div class="nav-menu">
-                        <a href="#" class="nav-item">ACERCA DE MI</a>
-                        <a href="#" class="nav-item">PROYECTOS</a>
-                        <a href="#" class="nav-item">CONTACTO</a>
-                        <!--                         <div class="">
+                    <div class="nav-menu text-white">
+                        <a href="#about" class="nav-item">ACERCA DE MI</a>
+                        <a href="#projects" class="nav-item">PROYECTOS</a>
+                        <a href="#contact" class="nav-item">CONTACTO</a>
+                        <!-- <div class="flex flex-col items-center">
                             <label class="switch">
                                 <input type="checkbox" checked>
                                 <span class="slider round"></span>
                             </label>
+                            <span class="switch-text text-gray-400 text-xs text-center">Light / Dark</span>
                         </div> -->
                     </div>
                 </div>
             </nav>
         </header>
         <div class="hero-info z-10 h-full absolute flex justify-around items-center w-full">
-            <div class="hero-info-text text-6xl">
-                <h2 class="hero-text text-gray-100">Desarrollador Web</h2>
-                <div class="division w-full h-1 my-2 bg-yellow-400"></div>
-                <h2 class="hero-text text-gray-100">Freelancer</h2>
-            </div>
-            <div class="hero-info-image w-1/5">
-                <img src="./assets/images/photo_me.png" alt="Me">
+            <div class="hero-content flex flex-col md:flex-row items-center justify-evenly">
+                <div class="hero-info-image p-2 md:p-10">
+                    <img src="./assets/images/photo.png" alt="Me" class="mx-auto  w-3/5 md:w-4/5">
+                </div>
+                <div class="text-white primary text-2xl sm:text-3xl md:text-4xl text-center italic flex flex-col">
+                    <h1 class="w-min border-b-4 border-yellow-400 md:mb-4">Full&nbsp;Stack&nbsp;Dev</h1>
+                    <h1 class="w-min border-b-4 border-yellow-400">Freelancer</h1>
+                </div>
             </div>
         </div>
         <div class="waveWrapper waveAnimation z-0">
-            <div class="waveWrapperInner bgTop">
-                <div class="wave waveTop" style="background-image: url('./assets/images/wave-top.png')"></div>
-            </div>
             <div class="waveWrapperInner bgMiddle">
                 <div class="wave waveMiddle"
-                    style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                    style="background-image: url('./assets/images/wave-mid.png')"></div>
             </div>
             <div class="waveWrapperInner bgBottom">
                 <div class="wave waveBottom"
-                    style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                    style="background-image: url('./assets/images/wave-bot.png')"></div>
             </div>
         </div>
     </section>
     <!-- ABOUT SECTION -->
-    <section class="about text-center p-10">
-        <h2 class="about-heading heading w-max text-4xl border-b-2 border-yellow-400 mx-auto text-gray-100">ACERCA DE MI
+    <section class="bg-white text-center p-10" id="about">
+        <h2 class="heading-dark w-max text-4xl border-b-2 border-gray-900 mx-auto text-gray-900">ACERCA DE MI
         </h2>
         <div class="about-content mt-6 flex flex-col md:flex-row">
-            <div class="content-info w-full md:w-1/2">
-                <p class="content-text text-yellow-400 px-12" >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iusto dolore sunt, saepe molestiae aliquid, necessitatibus suscipit eligendi in provident officiis
-                    voluptas adipisci aut, est modi recusandae rem fugit aperiam nesciunt exercitationem praesentium
-                    accusamus quas? Est cumque veritatis tempora dicta optio minus, veniam quis quidem totam pariatur
-                    nemo nisi quibusdam nam.</p>
-                <ul class="flex justify-evenly text-yellow-400 p-4 mt-4">
-                    <li class="flex flex-col">
-                        <i class="fab fa-linux text-5xl transform hover:scale-125 hover:text-red-400 ">
-                        </i>
-                        <span class="text-xs mt-2">Linux</span>
+            <div class="secundary w-full md:w-1/2">
+                <p class="content-text text-blue font-medium px-2 sm:px-6 md:px-12">Holaaa! Soy un Desarrollador Full Stack apasionado que tiene experiencia en la creación de atractivas aplicaciones web con JavaScript&nbsp;/&nbsp;Reactjs&nbsp;/&nbsp;Python, que serán la carta de presentación perfecta para tu marca, empresa o emprendimiento.</p>
+                <p class="content-text text-blue font-medium mt-4 px-2 sm:px-6 md:px-12">Actualmente estoy aprendiendo otros lenguajes y frameworks geniales para aplicaciones web y  móviles.</p>
+                <ul class="flex flex-col md:flex-row justify-center items-center p-4 mt-4 mb-4 justify-center gap-5">
+                    <li class="tech-row">
+                        <ul class="flex gap-4">
+                            <li class="flex flex-col">
+                                <i class="fab fa-linux text-5xl transform hover:scale-125">
+                                </i>
+                                <span class="text-xs mt-2">Linux</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <i class="fab fa-figma text-5xl transform hover:scale-125"></i>
+                                <span class="text-xs mt-2">Figma</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <i class="fab fa-github text-5xl transform hover:scale-125">
+                                </i>
+                                <span class="text-xs mt-2">Git & Github</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <i class="fab fa-html5 text-5xl transform hover:scale-125">
+                                </i>
+                                <span class="text-xs mt-2">HTML</span>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="flex flex-col">
-                        <i class="fab fa-figma text-5xl transform hover:scale-125"></i>
-                        <span class="text-xs mt-2">Figma</span>
-                    </li>
-                    <li class="flex flex-col">
-                        <i class="fab fa-github text-5xl transform hover:scale-125">
-                        </i>
-                        <span class="text-xs mt-2">Git & Github</span>
-                    </li>
-                    <li class="flex flex-col">
-                        <i class="fab fa-html5 text-5xl transform hover:scale-125">
-                        </i>
-                        <span class="text-xs mt-2">HTML</span>
-                    </li>
-                    <li class="flex flex-col">
-                        <i class="fab fa-css3-alt text-5xl transform hover:scale-125">
-                        </i>
-                        <span class="text-xs mt-2">CSS</span>
-                    </li>
-                    <li class="flex flex-col">
-                        <i class="fab fa-js-square text-5xl transform hover:scale-125">
-                        </i>
-                        <span class="text-xs mt-2">Javascript</span>
-                    </li>
-                    <li class="flex flex-col">
-                        <i class="fab fa-react text-5xl transform hover:scale-125">
-                        </i>
-                        <span class="text-xs mt-2">React</span>
-                    </li>
-                    <li class="flex flex-col">
-                        <i class="fab fa-python text-5xl transform hover:scale-125">
-                        </i>
-                        <span class="text-xs mt-2">Python</span>
+                    <li class="tech-row">
+                        <ul class="flex gap-4">
+                            <li class="flex flex-col">
+                                <i class="fab fa-css3-alt text-5xl transform hover:scale-125">
+                                </i>
+                                <span class="text-xs mt-2">CSS</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <i class="fab fa-js-square text-5xl transform hover:scale-125">
+                                </i>
+                                <span class="text-xs mt-2">Javascript</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <i class="fab fa-react text-5xl transform hover:scale-125">
+                                </i>
+                                <span class="text-xs mt-2">React</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <i class="fab fa-python text-5xl transform hover:scale-125">
+                                </i>
+                                <span class="text-xs mt-2">Python</span>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
-            <div class="about-links w-1/2 flex md:flex-col items-center justify-evenly mx-auto">
+            <div class="about-links w-1/2 flex flex-col items-center justify-evenly mx-auto gap-2 md:gap-4">
                 <button
-                    class="about-btn bg-yellow-400 px-4 py-2 rounded-tl-2xl rounded-br-2xl border-2 border-gray-200 hover:bg-yellow-300 hover:border-yellow-500"><a
+                    class="primary text-xl font-bold bg-gold px-4 py-2 rounded-tl-2xl rounded-br-2xl border-2 border-gray-900 hover:opacity-90 hover:border-gray-500 shadow-2xl w-full md:w-1/2"><a
                         href="#projects">PROYECTOS</a></button>
                 <button
-                    class="about-btn bg-yellow-400 px-4 py-2 rounded-tl-2xl rounded-br-2xl border-2 border-gray-200 hover:bg-yellow-300 hover:border-yellow-500"><a
+                    class="primary text-xl font-bold bg-gold px-4 py-2 rounded-tl-2xl rounded-br-2xl border-2 border-gray-900 hover:opacity-90 hover:border-gray-500 shadow-2xl w-full md:w-1/2"><a
                         href="./assets/hdv.pdf" download>HOJA DE VIDA</a></button>
             </div>
         </div>
     </section>
     <!-- PROJECTS SECTION -->
-    <section class="projetcs heading p-8 bg-black" id="projects">
+    <section class="bg-dark heading p-8" id="projects">
         <h2
-        class="article-heading heading w-max text-4xl border-b-2 border-yellow-400 mx-auto text-gray-100 text-center mb-8">
-        PROYECTOS</h2>
+            class="heading-light w-max text-4xl border-b-2 border-yellow-400 mx-auto text-center mb-8">
+            PROYECTOS</h2>
         <div class="projects-container">
-            <div class="panel flex flex-col sm:flex-row">
+            <div class="panel flex">
                 <div class="img w-4/5 bg-gray-900 px-1">
-                    <img src="./assets/images/1_project_tributo.png" alt="Web Tributo"  class="border-2 border-yellow-400">
+                    <img src="./assets/images/1_project_tributo.png" alt="Web Tributo"
+                        class="border-2 border-yellow-400">
                 </div>
-                <div class="panel-info bg-gray-700 py-4 px-2 text-center border-2 border-yellow-400">
-                    <h3 class="project-name text-center text-yellow-400 text-2xl font-bold">Pagina Web Tributo</h3>
-                    <p class="project-description text-center text-gray-100 py-8 text-xl">Diseño y desarrollo de página web tributo al Real Madrid C.F. con diseño responsive.</p>
-                    <div class="project-links flex justify-evenly text-white ">
+                <div class="panel-info bg-white py-4 px-2 text-center border-2 border-yellow-400">
+                    <h3 class="primary text-gold project-name text-center text-3xl font-bold">Pagina Web Tributo</h3>
+                    <p class="secundary text-center text-blue py-4 text-xl border-b-2 border-gray-300 hidden sm:block">
+                        Diseño y desarrollo de página
+                        web tributo al Real Madrid C.F. con diseño responsive.</p>
+                    <div class="text-gold project-stack pt-4">
+                        <h4 class="text-3xl primary text-blue font-bold">Stack</h4>
+                        <div class="stack-icons flex justify-evenly mt-4">
+                            <i
+                                class="fab fa-html5 text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-css3-alt text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <div class="secundary text-xl flex justify-evenly text-blue font-bold mt-10 underline">
                         <a href="#" class="hover:text-yellow-400">Figma</a>
-                        <a href="https://github.com/dlscoccia/Javascript_Practice/tree/master/Games/Memory" class="hover:text-yellow-400" target="_blank">Codigo</a>
+                        <a href="https://github.com/dlscoccia/HTML_Practice/tree/master/1_web_tributo"
+                            class="hover:text-yellow-400" target="_blank">Codigo</a>
                         <a href="./projects/1_tributo/index.html" class="hover:text-yellow-400" target="_blank">Demo</a>
                     </div>
-                    <div class="project-stack text-yellow-400 pt-4">
-                        <h4 class="text-xl">Stack</h4>
+                </div>
+            </div>
+            <div class="panel flex">
+                <div class="img w-4/5 bg-gray-900 px-1">
+                    <img src="./assets/images/2_project_pokedex.png" alt="Pokedex API"
+                        class="border-2 border-yellow-400">
+                </div>
+                <div class="panel-info bg-white py-4 px-2 text-center border-2 border-yellow-400">
+                    <h3 class="primary text-gold text-center text-3xl font-bold">Pokédex</h3>
+                    <p class="secundary text-center text-blue font-bold py-4 text-xl border-b-2 border-gray-300  hidden sm:block">
+                        Pokédex en versión web
+                        utilizando una API (PokeAPI) para la obtención de los datos mostrados.</p>
+                    <div class="text-gold pt-4">
+                        <h4 class="text-3xl font-bold primary text-blue font-bold">Stack</h4>
+                        <div class="stack-icons flex justify-evenly mt-4">
+                            <i
+                                class="fab fa-html5 text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-css3-alt text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <div class="secundary text-xl flex justify-evenly text-blue font-bold mt-10 underline">
+                        <a href="https://github.com/dlscoccia/Javascript_Practice/tree/master/IntroProjects/API/Pokedex_API"
+                            class="hover:text-yellow-400" target="_blank">Codigo</a>
+                        <a href="./projects/2_pokedex/index.html" class="hover:text-yellow-400" target="_blank">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel flex">
+                <div class="img w-4/5 bg-gray-900 px-1">
+                    <img src="./assets/images/5_project_memory.png" alt="Memoria juego"
+                        class="border-2 border-yellow-400">
+                </div>
+                <div class="panel-info bg-white py-4 px-2 text-center border-2 border-yellow-400">
+                    <h3 class="primary text-gold text-center text-3xl font-bold">Memoria - El Juego</h3>
+                    <p class="secundary text-center text-blue font-bold py-4 text-xl border-b-2 border-gray-300 hidden sm:block">
+                        Juego de memoría en versión
+                        web, utilizando eventos de Javascript.</p>
+                    <div class="text-gold pt-4">
+                        <h4 class="text-3xl primary text-blue font-bold">Stack</h4>
                         <div class="stack-icons flex justify-evenly mt-4">
                             <i class="fab fa-html5 text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
                             <i class="fab fa-css3-alt text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
                             <i class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
                         </div>
                     </div>
+                    <div class="secundary text-xl flex justify-evenly text-blue font-bold mt-10 underline">
+                        <a href="https://github.com/dlscoccia/Javascript_Practice/tree/master/Games/Memory"
+                            class="hover:text-yellow-400" target="_blank">Codigo</a>
+                        <a href="./projects/3_memory/index.html" class="hover:text-yellow-400" target="_blank">Demo</a>
+                    </div>
                 </div>
             </div>
-                <div class="panel flex">
-                    <div class="img w-4/5 bg-gray-900 px-1">
-                        <img src="./assets/images/2_project_pokedex.png" alt="Pokedex API" class="border-2 border-yellow-400">
-                    </div>
-                    <div class="panel-info bg-gray-700 py-4 px-2 text-center border-2 border-yellow-400">
-                        <h3 class="project-name text-center text-yellow-400 text-2xl font-bold">Pokédex</h3>
-                        <p class="project-description text-center text-gray-100 py-8 text-xl">Pokédex en versión web utilizando una API (PokeAPI) para la obtención de los datos mostrados.</p>
-                        <div class="project-links flex justify-evenly text-white ">
-                            <a href="https://github.com/dlscoccia/Javascript_Practice/tree/master/IntroProjects/API/Pokedex_API" class="hover:text-yellow-400" target="_blank">Codigo</a>
-                            <a href="./projects/2_pokedex/index.html" class="hover:text-yellow-400" target="_blank">Demo</a>
-                        </div>
-                        <div class="project-stack text-yellow-400 pt-4">
-                            <h4 class="text-xl">Stack</h4>
-                            <div class="stack-icons flex justify-evenly mt-4">
-                                <i class="fab fa-html5 text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                                <i class="fab fa-css3-alt text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                                <i class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel flex flex-col sm:flex-row">
-                    <div class="img w-4/5 bg-gray-900 px-1">
-                        <img src="./assets/images/5_project_memory.png" alt="Memoria juego"  class="border-2 border-yellow-400">
-                    </div>
-                    <div class="panel-info bg-gray-700 py-4 px-2 text-center border-2 border-yellow-400">
-                        <h3 class="project-name text-center text-yellow-400 text-2xl font-bold">Memoria - El Juego</h3>
-                        <p class="project-description text-center text-gray-100 py-8 text-xl">Juego de memoría en versión web.</p>
-                        <div class="project-links flex justify-evenly text-white ">
-                            <a href="https://github.com/dlscoccia/Javascript_Practice/tree/master/Games/Memory" class="hover:text-yellow-400" target="_blank">Codigo</a>
-                            <a href="./projects/3_memory/index.html" class="hover:text-yellow-400" target="_blank">Demo</a>
-                        </div>
-                        <div class="project-stack text-yellow-400 pt-4">
-                            <h4 class="text-xl">Stack</h4>
-                            <div class="stack-icons flex justify-evenly mt-4">
-                                <i class="fab fa-html5 text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                                <i class="fab fa-css3-alt text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                                <i class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
         </div>
         <div class="projects-container">
-            <div class="panel flex flex-col sm:flex-row">
+            <div class="panel flex">
                 <div class="img w-4/5 bg-gray-900 px-1">
-                    <img src="./assets/images/3_project_jessfood.png" alt="Web Tributo"  class="border-2 border-yellow-400">
+                    <img src="./assets/images/3_project_jessfood.png" alt="Web Tributo"
+                        class="border-2 border-yellow-400">
                 </div>
-                <div class="panel-info bg-gray-700 py-4 px-2 text-center border-2 border-yellow-400">
-                    <h3 class="project-name text-center text-yellow-400 text-2xl font-bold">JessFood Madrid</h3>
-                    <p class="project-description text-center text-gray-100 py-8 text-xl">Diseño y Desarrollo de página web para emprendiento gastronómico, utlizando TailwindCSS y despligue en Render.com</p>
-                    <div class="project-links flex justify-evenly text-white ">
-                        <a href="https://github.com/dlscoccia/HTML_Practice/tree/master/JessFood" class="hover:text-yellow-400" target="_blank">Codigo</a>
-                        <a href="./projects/4_jessfood/jessfoodmadrid.html" class="hover:text-yellow-400" target="_blank">Demo</a>
-                    </div>
-                    <div class="project-stack text-yellow-400 pt-4">
-                        <h4 class="text-xl">Stack</h4>
+                <div class="panel-info bg-white py-4 px-2 text-center border-2 border-yellow-400">
+                    <h3 class="primary text-gold text-center text-3xl font-bold">JessFood Madrid</h3>
+                    <p class="secundary text-center text-blue font-bold py-4 text-xl border-b-2 border-gray-300 hidden sm:block">
+                        Diseño y Desarrollo de página
+                        web para emprendiento gastronómico, utlizando TailwindCSS.</p>
+                    <div class="text-gold pt-4">
+                        <h4 class="text-3xl primary text-blue font-bold">Stack</h4>
                         <div class="stack-icons flex justify-evenly mt-4">
-                            <i class="fab fa-html5 text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                            <i class="fab fa-css3-alt text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                            <i class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-html5 text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-css3-alt text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
                         </div>
+                    </div>
+                    <div class="secundary text-xl flex justify-evenly text-blue font-bold mt-10 underline">
+                        <a href="https://github.com/dlscoccia/HTML_Practice/tree/master/JessFood"
+                            class="hover:text-yellow-400" target="_blank">Codigo</a>
+                        <a href="./projects/4_jessfood/jessfoodmadrid.html" class="hover:text-yellow-400"
+                            target="_blank">Demo</a>
                     </div>
                 </div>
             </div>
-            <div class="panel flex flex-col sm:flex-row">
+            <div class="panel flex">
                 <div class="img w-4/5 bg-gray-900 px-1">
-                    <img src="./assets/images/4_project_markdown.png" alt="Web Tributo" class="border-2 border-yellow-400">
+                    <img src="./assets/images/4_project_markdown.png" alt="Web Tributo"
+                        class="border-2 border-yellow-400">
                 </div>
-                <div class="panel-info bg-gray-700 py-4 px-2 text-center border-2 border-yellow-400">
-                    <h3 class="project-name text-center text-yellow-400 text-2xl font-bold">Markdown to HTML</h3>
-                    <p class="project-description text-center text-gray-100 py-8 text-xl">Programa que recibe como entrada un archivo README.md y lo transforma en su versión para HTML</p>
-                    <div class="project-links flex justify-evenly text-white ">
-                        <a href="https://github.com/dlscoccia/Markdown2HTML" class="hover:text-yellow-400" target="_blank">Codigo</a>
-                    </div>
-                    <div class="project-stack text-yellow-400 pt-4">
-                        <h4 class="text-xl">Stack</h4>
+                <div class="panel-info bg-white py-4 px-2 text-center border-2 border-yellow-400">
+                    <h3 class="primary text-gold text-center text-3xl font-bold">Markdown to HTML</h3>
+                    <p class="secundary text-center text-blue font-bold py-4 text-xl border-b-2 border-gray-300 hidden sm:block">
+                        Programa que recibe como
+                        entrada un archivo README.md y lo transforma en su versión para HTML</p>
+                    <div class="text-gold pt-4">
+                        <h4 class="text-3xl primary text-blue font-bold">Stack</h4>
                         <div class="stack-icons flex justify-evenly mt-4">
-                            <i class="fab fa-python text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-python text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
                         </div>
+                    </div>
+                    <div class="secundary text-xl flex justify-evenly text-blue font-bold mt-10 underline">
+                        <a href="https://github.com/dlscoccia/Markdown2HTML" class="hover:text-yellow-400"
+                            target="_blank">Codigo</a>
                     </div>
                 </div>
             </div>
-            <div class="panel flex flex-col sm:flex-row">
+            <div class="panel flex">
                 <div class="img w-4/5 bg-gray-900 px-1">
                     <img src="./assets/images/6_project_50_retos.png" alt="50 Retos" class="border-2 border-yellow-400">
                 </div>
-                <div class="panel-info bg-gray-700 py-4 px-2 text-center border-2 border-yellow-400">
-                    <h3 class="project-name text-center text-yellow-400 text-2xl font-bold">50 Retos</h3>
-                    <p class="project-description text-center text-gray-100 py-8 text-xl">50 Retos propuestos durante el bootcamp Programate para aprender y reforzar hablidades como Front End</p>
-                    <div class="project-links flex justify-evenly text-white ">
-                        <a href="https://github.com/dlscoccia/Javascript_Practice/tree/master/50_retos" class="hover:text-yellow-400" target="_blank">Codigo</a>
-                    </div>
-                    <div class="project-stack text-yellow-400 pt-4">
-                        <h4 class="text-xl">Stack</h4>
+                <div class="panel-info bg-white py-4 px-2 text-center border-2 border-yellow-400">
+                    <h3 class="primary text-gold text-center text-3xl font-bold">50 días de Retos</h3>
+                    <p class="secundary text-center text-blue font-bold py-4 text-xl border-b-2 border-gray-300 hidden sm:block">50
+                        Retos propuestos durante el
+                        bootcamp Programate para aprender y reforzar hablidades como Front End</p>
+                    <div class="text-gold pt-4">
+                        <h4 class="text-3xl primary text-blue font-bold">Stack</h4>
                         <div class="stack-icons flex justify-evenly mt-4">
-                            <i class="fab fa-html5 text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                            <i class="fab fa-css3-alt text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
-                            <i class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-html5 text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-css3-alt text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
+                            <i
+                                class="fab fa-js-square text-5xl transform hover:scale-110 hover:opacity-80 cursor-pointer"></i>
                         </div>
+                    </div>
+                    <div class="secundary text-xl flex justify-evenly text-blue mt-10 underline">
+                        <a href="https://github.com/dlscoccia/Javascript_Practice/tree/master/50_retos"
+                            class="hover:text-yellow-400" target="_blank">Codigo</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ARTICLES SECTION -->
-    <section class="articles h-screen bg-gray-700 p-8">
+    <section class="bg-light h-screen bg-gray-700 p-10">
         <h2
-            class="article-heading heading w-max text-4xl border-b-2 border-yellow-400 mx-auto text-gray-100 text-center mb-8">
+            class="heading-dark w-max text-4xl border-b-2 border-gray-900 mx-auto text-blue text-center mb-8">
             ULTIMOS ARTICULOS</h2>
-        <div class="book perspective text-white bg-yellow-300 w-11/12 h-4/5 flex justify-end mx-auto">
+        <div class="book secundary perspective text-white bg-yellow-300 w-11/12 h-4/5 flex justify-end mx-auto">
             <div class="page absolute duration-1000 flex items-end origin-left w-1/2 transition transform h-full"
                 data-page="2" onclick="togglePageFlip(this)">
                 <div
-                    class="front text-xl sm:text-3xl md:text-5xl flex items-center justify-center px-2 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full hover:text-yellow-400">
-                    <a href="https://dlscoccia.medium.com/the-internet-of-what-iot-the-new-revolution-f10d493468ab">The internet of What? IoT… The new revolution.</a>
-                    <p class="text-2xl text-yellow-400 animate-pulse self-end mr-8 mb-4 cursor-pointer"><i class="fas fa-angle-double-right"></i></p>
+                    class="front text-xl sm:text-3xl md:text-5xl flex items-center justify-center px-2 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full border-l-2 border-yellow-400">
+                    <a href="https://dlscoccia.medium.com/the-internet-of-what-iot-the-new-revolution-f10d493468ab"
+                        target="_blank" class="text-white ml-4 hover:text-yellow-400">The
+                        internet of What? IoT… The new revolution.</a>
+                    <p class="text-2xl text-gold animate-pulse self-end mr-8 mb-4 cursor-pointer"><i
+                            class="fas fa-angle-double-right"></i></p>
                 </div>
                 <div
-                    class="back text-xl sm:text-3xl md:text-5xl flex items-center justify-center px-2 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full hover:text-yellow-400">
-                    <p class="text-2xl text-yellow-400 animate-pulse self-end ml-4 mb-4 cursor-pointer"><i class="fas fa-angle-double-left"></i></p>
-                    <a href="https://dlscoccia.medium.com/mutable-immutable-everything-is-an-object-6c9218c062c6">Mutable, immutable… Everything is an object.</a>
+                    class="back text-xl sm:text-3xl md:text-5xl flex items-center justify-center px-4 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full border-r-2 border-yellow-400">
+                    <p class="text-2xl text-gold animate-pulse self-end ml-4 mb-4 cursor-pointer"><i
+                            class="fas fa-angle-double-left"></i></p>
+                    <a href="https://dlscoccia.medium.com/mutable-immutable-everything-is-an-object-6c9218c062c6" target="_blank" class="text-white mr-4 hover:text-yellow-400">Mutable,
+                        immutable… Everything is an object.</a>
                 </div>
             </div>
             <div class="page absolute duration-1000 flex items-end origin-left w-1/2 transition transform h-full"
                 data-page="1" onclick="togglePageFlip(this)">
                 <div
-                    class="front text-xl sm:text-3xl md:text-5xl flex flex-col items-center justify-around px-4 font-bold bg-gray-900 absolute right-0 w-full h-full">
-                    <p class="mt-8 p-8">"La tecnología es mejor cuando reúne a la gente."</p>
-                    <p class="text-sm italic self-end p-8">-Matt Mullenweg.</p>
-                    <p class="text-2xl text-yellow-400 animate-pulse self-end mb-4 mr-8 cursor-pointer"><i class="fas fa-angle-double-right"></i></p>
+                    class="front text-xl sm:text-3xl md:text-5xl flex flex-col items-center justify-around px-4 font-bold bg-gray-900 absolute right-0 w-full h-full border-l-2 border-yellow-400">
+                    <p class="text-white mt-8 p-4 sm:p-6 md:p-8 text-lg sm:text-xl md:text-4xl">"La tecnología es mejor cuando reúne a la gente."</p>
+                    <p class="text-white text-sm italic self-end p-8">-Matt Mullenweg.</p>
+                    <p class="text-2xl text-gold animate-pulse self-end mb-4 mr-8 cursor-pointer"><i
+                            class="fas fa-angle-double-right"></i></p>
                 </div>
-                <div
-                    class="back text-xl sm:text-3xl md:text-5xl flex items-center justify-center px-2 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full hover:text-yellow-400"">
-                    <p class="text-2xl text-yellow-400 animate-pulse self-end ml-4 mb-4 cursor-pointer"><i class="fas fa-angle-double-left"></i></p>
-                    <a href="https://dlscoccia.medium.com/what-happens-when-you-type-something-in-your-browser-and-press-enter-538d3d3c41c5">What happens when you search something in your browser?</a>
-                    
+                <div class="back text-xl sm:text-3xl md:text-5xl flex items-center justify-center px-2 sm:px-5 md:px-10 font-bold bg-gray-900 absolute w-full h-full"">
+                    <p class=" text-2xl text-gold animate-pulse self-end ml-4 mb-4 cursor-pointer"><i
+                        class="fas fa-angle-double-left"></i></p>
+                    <a href="https://dlscoccia.medium.com/what-happens-when-you-type-something-in-your-browser-and-press-enter-538d3d3c41c5"
+                        target="_blank" class="text-white hover:text-yellow-400">What
+                        happens when you search something in your browser?</a>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- CONTACT SECTION -->
-    <section class="contact text-center p-10">
-        <h2 class="contact-heading heading w-max text-4xl border-b-2 border-yellow-400 mx-auto text-gray-100">CONTACTO
+    <section class="bg-dark text-center p-4 sm:p-6 md:p-10" id="contact">
+        <h2 class="heading-light w-max text-4xl border-b-2 border-yellow-400 mx-auto mt-4 md:mt-2">CONTACTO
         </h2>
-        <div class="contact-container p-4 mt-4 text-gray-100 flex">
-            <div class="contact-info w-1/2 flex flex-col justify-evenly items-center">
+        <div class="contact-container p-4 mt-4 text-gray-100 flex flex-col md:flex-row">
+            <div class="secundary w-full md:w-1/2 flex flex-col justify-evenly items-center gap-4">
                 <div class="phone flex items-center w-3/5">
                     <span>
-                        <i class="fab fa-whatsapp text-yellow-400 text-4xl"></i>
+                        <i class="fab fa-whatsapp text-gold text-4xl"></i>
                     </span>
-                    <span class="text-xl ml-4">+57123456789</span>
+                    <span class="text-white txt-lg md:text-xl ml-4">+57123456789</span>
                 </div>
                 <div class="email flex items-center w-3/5">
                     <span>
-                        <i class="far fa-envelope text-yellow-400 text-4xl"></i>
+                        <i class="far fa-envelope text-gold text-4xl"></i>
                     </span>
-                    <span class="text-xl ml-4">dlscoccia@gmail.com</span>
+                    <span class="text-white txt-lg md:text-xl ml-4">dlscoccia@gmail.com</span>
                 </div>
                 <div class="address flex items-center w-3/5">
                     <span>
-                        <i class="fas fa-globe-americas text-yellow-400 text-4xl">
+                        <i class="fas fa-globe-americas text-gold text-4xl">
                         </i>
                     </span>
-                    <span class="text-xl ml-4">El Mundo Mundial</span>
+                    <span class="text-white txt-lg md:text-xl ml-4">Barranquilla, Colombia.</span>
                 </div>
             </div>
-            <div class="contact-form  w-1/2 flex flex-col items-center">
-                <h3>¿Tienes algún proyecto en mente?</h3>
+            <div class="contact-form w-full md:w-1/2 flex flex-col items-center mt-6 md:mt-2">
+                <h3 class="text-gold w-full text-lg sm:text-2xl animate-bounce mb-2">¿Tienes algún proyecto en mente?</h3>
                 <form action="https://formsubmit.co/2f84ca86c168b6208522de3c6bd26a5e" method="POST" class=" w-full">
-                    <div class="form-control">
+                    <div class="form-control text-white">
                         <input type="text" name="name" required>
-                        <label>Tu Nombre</label>
+                        <label class="secundary">Tu Nombre</label>
                     </div>
                     <div class="form-control">
                         <input type="email" name="email" required>
-                        <label>Tu Email</label>
+                        <label class="secundary">Tu Email</label>
                     </div>
                     <div class="form-control">
                         <textarea name="message" id="message" cols="4" rows="4" class="resize-none" required></textarea>
-                        <label>Tu mensaje</label>
+                        <label class="secundary">Tu mensaje</label>
                     </div>
                     <button type="submit"
-                        class="form-btn bg-yellow-400 text-indigo-900 rounded-br-2xl rounded-tl-2xl w-4/5 border-2 hover:border-yellow-500 hover:bg-yellow-400">Enviar</button>
+                        class="form-btn bg-gold text-blue rounded-br-2xl rounded-tl-2xl w-4/5 border-2 hover:border-yellow-500 hover:bg-yellow-400"><span class="secundary text-xl font-bold">Enviar</span></button>
                 </form>
             </div>
         </div>
     </section>
-    <footer class="footer bg-black text-gray-100 p-2">
+    <footer class="bg-black text-gold p-2">
         <div class="footer-social flex justify-around p-2 text-2xl">
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-dev"></i>
-            <i class="fab fa-github-square"></i>
-            <i class="fab fa-linkedin"></i>
+            <a href="https://twitter.com/dlscoccia"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://dev.to/dlscoccia"><i class="fab fa-dev"></i></a>
+            <a href="https://github.com/dlscoccia"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-lorenzo-scoccia/"><i class="fab fa-linkedin"></i></a>
         </div>
-        <div class="footer-text mb-2 px-8 text-xs italic flex justify-center flex">
-            <span><i class="far fa-copyright"></i> 2021 dlscoccia   |   Creditos</span>
+        <div class="footer-text mb-2 px-8 text-sm primary flex justify-center flex">
+            <span><i class="far fa-copyright"></i> 2021 dlscoccia</span>
         </div>
     </footer>
     <script src="./script.js"></script>

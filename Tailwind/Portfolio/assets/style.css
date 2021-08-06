@@ -24,6 +24,54 @@ hmtl {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+/* GENERAL ELEMENTS */
+.heading-dark {
+    font-family: var(--primary);
+    color: var(--blue);
+    font-weight: 900;
+}
+
+.heading-light {
+    font-family: var(--primary);
+    color: var(--white);
+    font-weight: 900;
+}
+
+.bg-dark {
+    background-color: var(--blue);
+}
+
+.bg-light {
+    background-color: var(--white);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.bg-gold {
+    background-color: var(--gold);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.primary {
+    font-family: var(--primary);
+}
+
+.secundary {
+    font-family: var(--secundary);
+}
 /* NAVBAR */
 
 .hero .header {
@@ -37,7 +85,6 @@ hmtl {
 
 .nav {
     height: 50px;
-    color: #f6f6f6;
     position: relative;
 }
 
@@ -48,11 +95,12 @@ hmtl {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+
 }
 
 .nav-logo {
     font-size: 1.8em;
-    font-family: 'Poiret One', cursive;
+    font-family: var(--primary);
     display: flex;
     align-items: center;
 }
@@ -63,14 +111,14 @@ hmtl {
 }
 
 .nav-menu {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 3em;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
     font-weight: 900;
+
 }
 
 .nav-item {
-    color: #f6f6f6;
     text-decoration: none;
     text-transform: uppercase;
     --underline: polygon(0 0, 0 0, 0 100%, 0% 100%);
@@ -79,7 +127,7 @@ hmtl {
 .nav-item::after {
     content: '';
     display: block;
-    background-color: #d4af37;
+    background-color: var(--gold);
     width: 100%;
     margin-top: 3px;
     height: 3px;
@@ -96,51 +144,12 @@ hmtl {
     display: none;
 }
 
-
-@media screen and (max-width: 768px) {
-    .nav-label {
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav-menu {
-        position: absolute;
-        top: 67px;
-        background-color: #f6f6f6;
-        width: 100vw;
-        height: 100vh;
-        left: -32px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
-        gap: 15%;
-    }
-
-    .nav-menu .nav-item {
-        color: #051C2C;
-    }
-
-    .nav-input:checked+.nav-menu {
-        clip-path: circle(100% at center);
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-    .nav-name {
-        display: none;
-    }
-}
-
 /* DARK MODE TOGGLE */
-.switch {
+/* .switch {
     position: relative;
     display: inline-block;
-    width: 0px;
-    height: 34px;
+    width: 60px;
+    height: 30px;
 }
 
 .switch input {
@@ -166,53 +175,42 @@ hmtl {
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
-    bottom: 4px;
+    left: 2px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked+.slider {
-    background-color: #2196F3;
+    background-color: #1a4b73;
+    border: 2px solid var(--gold);
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    border: 2px solid var(--gold);
 }
 
 input:checked+.slider:before {
     transform: translateX(26px);
+
 }
 
-/* Rounded sliders */
 .slider.round {
     border-radius: 34px;
 }
 
 .slider.round:before {
     border-radius: 50%;
-}
+} */
 
+/* HEADER */
 
 header {
     z-index: 999;
     position: fixed;
 }
 
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
-}
+/* HERO WAVES */
 
 .waveWrapper {
     overflow: hidden;
@@ -230,12 +228,6 @@ header {
     overflow: hidden;
     height: 100%;
     bottom: -1px;
-    background-image: linear-gradient(to top, #06304f 10%, #051c2c 80%);
-}
-
-.bgTop {
-    z-index: 15;
-    opacity: 0.5;
 }
 
 .bgMiddle {
@@ -257,15 +249,6 @@ header {
     transform-origin: center bottom;
 }
 
-.waveTop {
-    background-size: 50% 100px;
-}
-
-.waveAnimation .waveTop {
-    animation: move-wave 3s;
-    animation-delay: 1s;
-}
-
 .waveMiddle {
     background-size: 50% 120px;
 }
@@ -282,14 +265,18 @@ header {
     animation: move_wave 15s linear infinite;
 }
 
-/* ABOUT SECTION */
-.heading {
-    font-family: var(--primary);
-}
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
 
-.about,
-.contact {
-    background-color: var(--blue);
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
 }
 
 /* CONTACT FORM */
@@ -327,12 +314,11 @@ header {
 .form-control textarea {
     background-color: transparent;
     border: 0;
-    border-bottom: #fefefe 2px solid;
+    border-bottom: var(--white) 2px solid;
     display: block;
     width: 100%;
     padding: 10px 0;
     font-size: 18px;
-    color: #fefefe;
 }
 
 .form-control input:focus,
@@ -402,16 +388,6 @@ header {
 
 }
 
-.book::before {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 1);
-    z-index: 999;
-}
-
 /* PROJECTS */
 
 .projects-container {
@@ -435,20 +411,62 @@ header {
     width: 0;
     display: none;
     cursor: default;
+    overflow: hidden;
 }
 
-.panel .img img{
+.panel .img img {
     object-fit: cover;
+    object-position: center;
     width: 100%;
     height: 100%;
 }
 
 .panel.active .panel-info {
-    width: 40%;
+    width: 80%;
     display: block;
     transition: width 1s ease;
 }
 
 .panel.active {
     flex: 5;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .nav-label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 67px;
+        background-color: var(--white);
+        width: 100vw;
+        height: 100vh;
+        left: -32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        gap: 10%;
+    }
+
+    .nav-menu .nav-item {
+        color: var(--blue);
+    }
+
+    .nav-input:checked+.nav-menu {
+        clip-path: circle(100% at center);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .nav-name {
+        display: none;
+    }
 }
