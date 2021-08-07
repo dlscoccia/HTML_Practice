@@ -1,5 +1,4 @@
 /* NAVBAR EFFECT */
-
 const header = document.querySelector('.header')
 const hero = document.querySelector('#hero')
 const about = document.querySelector('#about')
@@ -10,7 +9,6 @@ const navItems = document.querySelectorAll('.nav-item')
 const aboutLimit = hero.offsetHeight - 150
 const projectsLimit = aboutLimit + about.offsetHeight
 const contactLimit = projectsLimit + projects.offsetHeight + articles.offsetHeight
-console.log(navItems)
 window.addEventListener('scroll', fixNav)
 
 function fixNav() {
@@ -34,7 +32,6 @@ function fixNav() {
     } else {
         navItems[2].classList.remove('current')
     }
-    console.log(window.scrollY)
 }
 
 /* PROJECTS */
@@ -77,4 +74,10 @@ labels.forEach(label => {
     const delay = '0.3s'
     label.innerHTML = label.innerText.split('').map((letter, idx) => `<span style="transition-delay:${idx * 0.035}s";>${letter}</span>`).join('')
 
+})
+
+/* FOOTER CREDITS */
+const btn = document.querySelector('.btn-credits')
+btn.addEventListener('click', () => {
+    btn.classList.toggle('show')
 })

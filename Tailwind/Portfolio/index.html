@@ -15,7 +15,7 @@
 
 <body>
     <section class="hero h-screen bg-dark" id="hero">
-        <header class="header active">
+        <header class="header">
             <nav class="nav primary text-lg tracking-wider">
                 <div class="nav-container">
                     <div class="nav-logo-active">
@@ -248,7 +248,7 @@
                     <div class="secundary text-xl flex justify-evenly text-blue font-bold mt-10 underline">
                         <a href="https://github.com/dlscoccia/HTML_Practice/tree/master/JessFood"
                             class="hover:text-yellow-400" target="_blank">Codigo</a>
-                        <a href="./projects/4_jessfood/jessfoodmadrid.html" class="hover:text-yellow-400"
+                        <a href="https://www.jessfoodmadrid.com/" class="hover:text-yellow-400"
                             target="_blank">Demo</a>
                     </div>
                 </div>
@@ -376,7 +376,8 @@
             </div>
             <div class="contact-form w-full md:w-1/2 flex flex-col items-center mt-6 md:mt-2">
                 <h3 class="text-gold w-full text-lg sm:text-2xl animate-bounce mb-2">¿Tienes algún proyecto en mente?</h3>
-                <form action="https://formsubmit.co/2f84ca86c168b6208522de3c6bd26a5e" method="POST" class=" w-full">
+                <form action="https://formsubmit.co/dlscoccia@gmail.com" method="POST" class="w-full">
+                    <input type="hidden" name="_next" value="./thankyou.html">
                     <div class="form-control text-white">
                         <input type="text" name="name" required>
                         <label class="secundary">Tu Nombre</label>
@@ -402,8 +403,12 @@
             <a href="https://github.com/dlscoccia"><i class="fab fa-github-square"></i></a>
             <a href="https://www.linkedin.com/in/daniel-lorenzo-scoccia/"><i class="fab fa-linkedin"></i></a>
         </div>
-        <div class="footer-text mb-2 px-8 text-sm primary flex justify-center flex">
+        <div class="footer-text mb-2 px-8 text-md primary flex justify-center flex justify-between">
             <span><i class="far fa-copyright"></i> 2021 dlscoccia</span>
+            <div class="credits flex gap-4 flex-row-reverse">
+                <button class="btn-credits">Creditos</button>
+                <span class="credit flex gap-2 secundary text-sm items-center"><a href="https://www.freepik.com/vectors/background">Rawpixel.com</a> | <a href="https://www.freepik.com/photos/computer">Racool_studio</a></span>
+            </div>
         </div>
     </footer>
     <script src="./script.js"></script>

@@ -457,6 +457,31 @@ header {
     flex: 5;
 }
 
+/* FOOTER */
+
+footer {
+    overflow: hidden;
+}
+
+.credits {
+    position: relative;
+}
+
+.credits .credit {
+    display: flex;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.btn-credits.show + .credit {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+/* .btn-credits.show .credits{
+    transform: translateY(0);
+} */
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
@@ -496,3 +521,20 @@ header {
         display: none;
     }
 }
+
+/* THANKS YOU PAGE */
+.thanks-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/thankyou.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.thanks-container .message {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: var(--secundary);
+    color: var(--blue);
+}
+
